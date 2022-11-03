@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+.vscode/
+bin/
+obj/
+
+# Jetbrains
+.idea/
+
+# vuepress
+node_modules
+.temp
+.cache
+dist
