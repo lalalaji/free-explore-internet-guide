@@ -1,17 +1,17 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebar: SidebarConfig = {
-  '/': [
-    '/README.md',
-  ],
-  'proxy': [
+  '/proxy': [
     '/proxy/shadowsocks.md',
     '/proxy/cfw.md'
   ],
-  'airport': [
+  '/airport': [
     '/airport/glados.md',
   ],
-  'privacy': [
+  '/privacy': [
     '/privacy/session.md',
+  ],
+  '/about': [
+    '/about.md'
   ]
 }
