@@ -1,5 +1,6 @@
 import { PluginConfig } from '@vuepress/theme-default'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export const plugins: PluginConfig = [
   searchPlugin({
@@ -12,5 +13,8 @@ export const plugins: PluginConfig = [
       },
     },
     isSearchable: (page) => page.path !== '/',
+  }),
+  googleAnalyticsPlugin({
+    id: 'G-MQYK3KRTDG',
   }),
 ]

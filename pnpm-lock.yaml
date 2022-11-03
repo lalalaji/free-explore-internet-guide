@@ -4,6 +4,7 @@ specifiers:
   '@vuepress/client': 2.0.0-beta.53
   '@vuepress/plugin-back-to-top': 2.0.0-beta.53
   '@vuepress/plugin-external-link-icon': 2.0.0-beta.53
+  '@vuepress/plugin-google-analytics': 2.0.0-beta.53
   '@vuepress/plugin-medium-zoom': 2.0.0-beta.53
   '@vuepress/plugin-nprogress': 2.0.0-beta.53
   '@vuepress/plugin-prismjs': 2.0.0-beta.53
@@ -15,6 +16,7 @@ devDependencies:
   '@vuepress/client': 2.0.0-beta.53
   '@vuepress/plugin-back-to-top': 2.0.0-beta.53
   '@vuepress/plugin-external-link-icon': 2.0.0-beta.53
+  '@vuepress/plugin-google-analytics': 2.0.0-beta.53
   '@vuepress/plugin-medium-zoom': 2.0.0-beta.53
   '@vuepress/plugin-nprogress': 2.0.0-beta.53
   '@vuepress/plugin-prismjs': 2.0.0-beta.53
@@ -442,6 +444,16 @@ packages:
       '@vuepress/core': 2.0.0-beta.53
       '@vuepress/utils': 2.0.0-beta.53
       execa: 6.1.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@vuepress/plugin-google-analytics/2.0.0-beta.53:
+    resolution: {integrity: sha512-W0tLmO896zHMNPCAqQnZMdYsp8onqPKdSMTSNl4kFHe0jofZjhjmbP1Ie4O781JJDYwnTnY5aHC4M/0LJRbQuQ==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.53
+      '@vuepress/core': 2.0.0-beta.53
+      '@vuepress/utils': 2.0.0-beta.53
     transitivePeerDependencies:
       - supports-color
     dev: true

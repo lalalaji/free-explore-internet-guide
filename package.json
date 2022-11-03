@@ -14,6 +14,7 @@
     "@vuepress/client": "2.0.0-beta.53",
     "@vuepress/plugin-back-to-top": "2.0.0-beta.53",
     "@vuepress/plugin-external-link-icon": "2.0.0-beta.53",
+    "@vuepress/plugin-google-analytics": "2.0.0-beta.53",
     "@vuepress/plugin-medium-zoom": "2.0.0-beta.53",
     "@vuepress/plugin-nprogress": "2.0.0-beta.53",
     "@vuepress/plugin-prismjs": "2.0.0-beta.53",
