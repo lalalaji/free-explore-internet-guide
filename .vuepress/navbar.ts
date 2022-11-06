@@ -4,8 +4,8 @@ export const navbar: NavbarConfig = [
   {
     text: '代理',
     children: [
+      '/proxy/shadowsocks.md',
       '/proxy/cfw.md',
-      '/proxy/shadowsocks.md'
     ],
   },
   {

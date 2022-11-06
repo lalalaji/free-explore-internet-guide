@@ -1,48 +1,95 @@
 ---
-title: "Clash for Windows简介"
-date: 2022-01-14T00:58:15+08:00
-tags:
-  - 科学上网
-categories:
-  - 科学上网
-toc: true
+prev: /airport/glados.md
 ---
 
-看了前一篇文章（[自用机场推荐——Glados](/post/glados/)的朋友或许对 clash for windows（以下简称 cfw）这个软件的功能不太了解，这里就来简单介绍一下这个软件的功能。如果你需要详细的文档，也可以直接查看下面的链接。我这里只简单介绍一下几个常用的功能。
+# Clash For Windows 教程
 
-<https://docs.cfw.lbyczf.com/contents/quickstart.html#%E5%90%AF%E5%8A%A8>
+看了前一篇文章（[自用机场推荐——Glados](/airport/glados.md)）的朋友或许对 clash for windows（以下简称 cfw）这个软件的功能不太了解，这里就来简单介绍一下这个软件的功能。
 
-## 订阅地址更新
+如果你需要更详细的文档，也可以直接查看下面的链接。我这里只简单介绍一下几个常用的功能。
 
-在 cfw 软件的左边就是配置文件的管理，如果你使用的是机场的服务，那么只需要把机场提供的订阅地址粘贴到这里，cfw 就会下载并使用。
+<https://docs.cfw.lbyczf.com>
 
-![订阅地址](https://raw.githubusercontent.com/lsmnoxa/image-host/main/img/20220114010642.png)
+## 快速上手
 
-你也可以在上面点击右键，选择设置，这样就会弹出一个对话框，在这里可以设置自动更新配置文件的间隔，一般设置成几个小时就够了。
+### 导入配置文件
 
-![自动更新间隔](https://raw.githubusercontent.com/lsmnoxa/image-host/main/img/20220114011036.png)
+当你购买了支持 Clash 的机场之后，应该会获得一个 Clash 配置文件订阅地址，访问这个地址即可下载配置文件。cfw 支持从订阅地址下载配置，切换到 Profile 界面，即可进行如下操作。
 
-## 允许局域网连接
+1. 将订阅地址复制粘贴到这里
+1. 点击下载按钮即可下载配置文件
+1. 下载之后再点一下，出现绿色竖线表示已经启用该配置
+1. 将来如果需要更新的话，点击右边的刷新按钮即可
 
-先来看看 cfw 的主界面，在这里可以设置常用的配置，如果你在家里的话，建议允许局域网连接，更加方便。
+![添加订阅](/img/cfw-profile.png)
 
-- port，本地代理使用的端口号
-- allow lan，是否允许本地局域网连接，如果允许的话，同一局域网的其他电脑或手机也可以通过代理访问互联网
-- ipv6，是否启用 ipv6，如果你的运营商以及家里的路由器都支持 ipv6 的话就可以开启
-- uwp launcher，在 win 系统下 uwp 应用默认直连，无法走代理，点击它可以启动调试工具解除该限制
-- system proxy，是否启用系统代理，因为 cfw 的订阅规则一般包含了各种地址的访问规则，所以启用系统代理也没有什么影响
-- start with windows，是否开机自启
+如果无法 cfw 下载配置文件失败，也可以从浏览器或者其他地方先下载配置文件，然后拖动到 cfw 软件上，一样可以启用配置。
 
-![主界面配置](https://raw.githubusercontent.com/lsmnoxa/image-host/main/img/20220114011334.png)
+### 开启代理
 
-## 静默启动
+导入配置文件之后，返回 General 界面，开启系统代理以及开机自启，即可开始使用 cfw 代理上网。
 
-cfw 启动的时候会开启软件界面，不需要的话也可以让它静默启动。
+![开启代理](/img/cfw-start.png)
 
-![静默启动](https://raw.githubusercontent.com/lsmnoxa/image-host/main/img/20220114012736.png)
+### 测试节点
 
-## 按延迟排序节点
+支持 clash 的机场通常都包含多个节点，如果某个节点不可用，也可以在 cfw 中切换到其他节点。在切换节点之前也可以通过点击界面上的测试图标来测试节点的延迟。
+
+![测试节点](/img/cfw-proxies.png)
+
+## 功能设置
+
+有一些 cfw 设置我会同时开启，如果你觉得有用的话，也可以和我一样设置。
+
+### 自动更新配置
+
+你也可以在上面点击右键，选择设置，这样就会弹出一个对话框，在这里可以设置自动更新配置文件的间隔。机场不可能天天更新配置文件，所以 12 或者 24 小时足够了。
+
+![打开设置](/img/cfw-profile-settings.png)
+
+![设置自动更新间隔](/img/cfw-autoupdate.png)
+
+### 允许局域网连接
+
+先来看看 cfw 的主界面，在这里可以设置常用的配置。如果你在家里的话，建议允许局域网连接，这样同一路由器下的其他设备就可以通过你的设备来翻墙了，有时候不方便设置 cfw 的时候会很有用。
+
+- Port，本地代理使用的端口号
+- Allow LAN，是否允许本地局域网连接，如果允许的话，同一局域网的其他电脑或手机也可以通过代理访问互联网
+- IPv6，是否启用 ipv6，如果你的运营商以及家里的路由器都支持 ipv6 的话就可以开启
+- UWP Loopback，win 系统下 uwp 应用默认直连，无法走代理，点击它可以启动调试工具解除该限制
+- System Proxy，是否启用系统代理，因为 cfw 的订阅规则一般包含了各种地址的访问规则，所以启用系统代理也没有什么影响
+- Start with Windows，是否开机自启
+
+![主界面配置](/img/cfw-general.png)
+
+### 静默启动
+
+cfw 启动的时候会开启软件界面，不需要的话也可以让它静默启动，这样开机以后它会自动在后台悄悄运行。
+
+![静默启动](/img/cfw-silent-start.png)
+
+### 按延迟排序节点
 
 如果需要按延迟排序节点的话，按下图设置。
 
-![按延迟排序](https://raw.githubusercontent.com/lsmnoxa/image-host/main/img/20220114012847.png)
+![按延迟排序](/img/cfw-orderby-latency.png)
+
+### TUN 模式全局代理
+
+系统代理可以应对大多数情况，但是有些程序它不吃系统代理，也没有设置代理选项的地方。这时候如果想要使用代理就可以使用 TUN Mode，该模式会新增一块虚拟网卡，将所有网络流量导入这块网卡，这样就可以实现全局代理，让所有程序都能通过代理运行。不过很多国内程序如 QQ 微信同样会走代理，速度反而会变慢。因此 TUN 模式应当在真的需要全局代理的时候才开启。
+
+开启 TUN 模式需要先启用*Service Mode*。在 General 界面点击*Service Mode*右边的*Manage*，然后点击*Install*按钮，稍等片刻就会安装完毕，在这个过程中 cfw 会重启。开启成功之后，*Service Mode*旁边就会多出一个绿色的地球图标，表示开启成功。
+
+然后再点击*TUN Mode*的开关，就可以开启 TUN 模式了。
+
+## 疑难解答
+
+### 开启系统代理后，UWP 应用无法上网了
+
+这是 Windows 系统的一个限制，UWP 无法访问本地回环地址代理。所以当启用了系统代理之后，UWP 应用就无法上网了。解决办法也很简单，在 General 界面找到*UWP Loopback*，打开工具，然后排除需要访问网络的 UWP 即可。
+
+![UWP Loopback](/img/cfw-uwp-loopback.png)
+
+如果不确定排除哪个应用，点击*Exemplify All*解除所有 UWP 的限制，然后点击*Save Changes*保存即可。
+
+![Exemplify All](/img/cfw-uwp-loopback-acleu.png)

@@ -1,12 +1,8 @@
----
-title: "Shadowsocks简介"
-date: 2022-01-15T04:27:40+08:00
-tags:
-  - 科学上网
-categories:
-  - 科学上网
-toc: true
----
+# Shadowsocks 简介
+
+::: warning
+本文目前已经过时，内容仅供参考，请等待博主更新
+:::
 
 shadowsocks（也称影梭）是一个高性能的代理软件，曾经广泛使用。不过目前代理软件有很多选择，除了影梭、还有 v2ray、trojan、clash 等，但是要了解科学上网，影梭还是有必要介绍一下的。
 
