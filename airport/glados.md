@@ -38,6 +38,10 @@ next: /proxy/cfw.md
 
 如果需要其他系统的客户端，glados 也有相关的帮助，照着网页上的提示下载对应的客户端就可以了。
 
+### 签到
+
+glados 可以通过每日签到的方式增加使用天数，这个每日签到几率还是很高的，相当于变相打折，这一点做的还是蛮好的。可以将[签到地址](https://glados.rocks/console/checkin)收藏到浏览器里，每天记得签到。
+
 ### 优惠码
 
 <https://glados.rocks/console/clash>
