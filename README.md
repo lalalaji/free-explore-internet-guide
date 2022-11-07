@@ -21,3 +21,4 @@
 隐私相关：
 
 - [session](./privacy/session.md)，匿名聊天软件，至少在网络上有个能随便说话的地方
+- [syncthing](./privacy/syncthing.md)，开源的文件分享工具
