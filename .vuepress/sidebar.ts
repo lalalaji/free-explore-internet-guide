@@ -11,6 +11,9 @@ export const sidebar: SidebarConfig = {
   '/privacy': [
     '/privacy/session.md',
   ],
+  '/network': [
+    '/network/github.md',
+  ],
   '/about': [
     '/about.md'
   ]

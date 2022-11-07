@@ -15,6 +15,12 @@ export const navbar: NavbarConfig = [
     ]
   },
   {
+    text: '网络',
+    children: [
+      '/network/github.md',
+    ]
+  },
+  {
     text: '隐私',
     children: [
       '/privacy/session.md'
