@@ -18,6 +18,7 @@ export const navbar: NavbarConfig = [
     text: '网络',
     children: [
       '/network/github.md',
+      '/network/google-play-alter.md',
     ]
   },
   {

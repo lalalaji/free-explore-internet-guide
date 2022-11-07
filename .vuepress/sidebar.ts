@@ -13,6 +13,7 @@ export const sidebar: SidebarConfig = {
   ],
   '/network': [
     '/network/github.md',
+    '/network/google-play-alter.md',
   ],
   '/about': [
     '/about.md'
