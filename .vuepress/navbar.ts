@@ -20,6 +20,7 @@ export const navbar: NavbarConfig = [
     children: [
       '/network/github.md',
       '/network/google-play-alter.md',
+      '/network/dns.md',
     ]
   },
   {
