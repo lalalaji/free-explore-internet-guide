@@ -4,6 +4,7 @@ export const sidebar: SidebarConfig = {
   '/proxy': [
     '/proxy/shadowsocks.md',
     '/proxy/cfw.md',
+    '/proxy/cfa.md',
   ],
   '/airport': [
     '/airport/glados.md',

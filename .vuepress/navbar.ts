@@ -6,6 +6,7 @@ export const navbar: NavbarConfig = [
     children: [
       '/proxy/shadowsocks.md',
       '/proxy/cfw.md',
+      '/proxy/cfa.md',
     ],
   },
   {
