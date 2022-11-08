@@ -13,6 +13,7 @@ export const sidebar: SidebarConfig = {
   '/privacy': [
     '/privacy/session.md',
     '/privacy/syncthing.md',
+    '/privacy/tor.md',
   ],
   '/network': [
     '/network/github.md',

@@ -29,6 +29,7 @@ export const navbar: NavbarConfig = [
     children: [
       '/privacy/session.md',
       '/privacy/syncthing.md',
+      '/privacy/tor.md',
     ]
   },
   '/about.md',
