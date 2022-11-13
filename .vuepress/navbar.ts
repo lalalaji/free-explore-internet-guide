@@ -30,6 +30,7 @@ export const navbar: HopeThemeNavbarConfig = [
       '/privacy/session.md',
       '/privacy/syncthing.md',
       '/privacy/tor.md',
+      '/privacy/warp.md',
     ]
   },
   '/about.md',
