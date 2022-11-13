@@ -1,12 +1,12 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import type { HopeThemeNavbarConfig } from "vuepress-theme-hope";
 
-export const navbar: NavbarConfig = [
+export const navbar: HopeThemeNavbarConfig = [
   {
     text: '代理',
     children: [
-      '/proxy/shadowsocks.md',
-      '/proxy/cfw.md',
       '/proxy/cfa.md',
+      '/proxy/cfw.md',
+      '/proxy/shadowsocks.md',
       '/proxy/switchyomega.md',
     ],
   },

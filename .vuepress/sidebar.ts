@@ -1,25 +1,10 @@
-import type { SidebarConfig } from '@vuepress/theme-default'
+import type { HopeThemeSidebarConfig } from "vuepress-theme-hope";
 
-export const sidebar: SidebarConfig = {
-  '/proxy': [
-    '/proxy/shadowsocks.md',
-    '/proxy/cfw.md',
-    '/proxy/cfa.md',
-    '/proxy/switchyomega.md',
-  ],
-  '/airport': [
-    '/airport/glados.md',
-  ],
-  '/privacy': [
-    '/privacy/session.md',
-    '/privacy/syncthing.md',
-    '/privacy/tor.md',
-  ],
-  '/network': [
-    '/network/github.md',
-    '/network/google-play-alter.md',
-    '/network/dns.md',
-  ],
+export const sidebar: HopeThemeSidebarConfig = {
+  '/proxy/': "structure",
+  '/airport/': "structure",
+  '/privacy/': "structure",
+  '/network/': "structure",
   '/about': [
     '/about.md'
   ]

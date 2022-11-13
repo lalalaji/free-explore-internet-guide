@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean-dev": "vuepress dev --clean-cache",
     "dev": "vuepress dev",
     "build": "vuepress build"
   },
@@ -12,14 +13,11 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.53",
-    "@vuepress/plugin-back-to-top": "2.0.0-beta.53",
-    "@vuepress/plugin-external-link-icon": "2.0.0-beta.53",
     "@vuepress/plugin-google-analytics": "2.0.0-beta.53",
-    "@vuepress/plugin-medium-zoom": "2.0.0-beta.53",
-    "@vuepress/plugin-nprogress": "2.0.0-beta.53",
-    "@vuepress/plugin-prismjs": "2.0.0-beta.53",
     "@vuepress/plugin-search": "2.0.0-beta.53",
-    "vue": "^3.2.41",
-    "vuepress": "2.0.0-beta.53"
+    "vue": "^3.2.45",
+    "vuepress": "2.0.0-beta.53",
+    "vuepress-plugin-md-enhance": "2.0.0-beta.122",
+    "vuepress-theme-hope": "2.0.0-beta.121"
   }
 }
