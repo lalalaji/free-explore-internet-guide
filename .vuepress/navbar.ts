@@ -6,6 +6,7 @@ export const navbar: HopeThemeNavbarConfig = [
     children: [
       '/proxy/cfa.md',
       '/proxy/cfw.md',
+      '/proxy/clash.md',
       '/proxy/shadowsocks.md',
       '/proxy/switchyomega.md',
     ],

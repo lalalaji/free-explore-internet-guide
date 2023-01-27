@@ -5,6 +5,7 @@
 代理软件介绍：
 
 - [shadowsocks 简介](./proxy/shadowsocks.md)
+- [Clash 教程](./proxy/clash.md)
 - [Clash For Windows 教程](./proxy/cfw.md)
 - [Clash For Android 教程](./proxy/cfa.md)
 - [switchyomega 扩展](./proxy/switchyomega.md)，让浏览器识别国内外网站，智能应用代理
