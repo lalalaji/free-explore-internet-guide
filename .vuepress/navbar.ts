@@ -16,7 +16,8 @@ export const navbar: HopeThemeNavbarConfig = [
   {
     text: '机场',
     children: [
-      '/airport/glados.md'
+      '/airport/glados.md',
+      '/airport/sockboom.md'
     ]
   },
   {
