@@ -10,7 +10,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "无障碍网上冲浪指南",
+      title: "🪜无障碍网上冲浪指南🪜",
       description: "教你如何科学上网",
     },
   },

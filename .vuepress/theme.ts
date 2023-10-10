@@ -71,9 +71,9 @@ export default hopeTheme({
       flowchart: true,
       footnote: true,
       gfm: true,
-      imageLazyload: true,
-      imageTitle: true,
-      imageSize: true,
+      imgLazyload: true,
+      figure: true,
+      imgSize: true,
       include: true,
       katex: true,
       mark: true,
@@ -81,7 +81,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
+      revealJs: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
       stylize: [
