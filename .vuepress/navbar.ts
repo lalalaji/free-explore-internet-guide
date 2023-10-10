@@ -7,6 +7,7 @@ export const navbar: HopeThemeNavbarConfig = [
       '/proxy/cfa.md',
       '/proxy/cfw.md',
       '/proxy/clash.md',
+      '/proxy/free-cloudflare-worker-proxy',
       '/proxy/openclash.md',
       '/proxy/shadowsocks.md',
       '/proxy/switchyomega.md',

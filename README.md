@@ -6,6 +6,7 @@
 
 - [shadowsocks 简介](./proxy/shadowsocks.md)
 - [Clash 教程](./proxy/clash.md)
+- [白嫖 Cloudflare Worker 免费翻墙教程](./proxy/free-cloudflare-worker-proxy.md)
 - [Clash For Windows 教程](./proxy/cfw.md)
 - [Clash For Android 教程](./proxy/cfa.md)
 - [openclash 教程](./proxy/openclash.md)
