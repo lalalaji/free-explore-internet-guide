@@ -1,23 +1,27 @@
 {
   "name": "free-explore-internet-guide",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "module",
   "scripts": {
-    "clean-dev": "vuepress dev --clean-cache",
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "build": "vuepress-vite build src",
+    "clean-dev": "vuepress-vite dev src --clean-cache",
+    "dev": "vuepress-vite dev src",
+    "upd": "pnpm dlx vp-update"
   },
   "keywords": [],
   "author": "lalalaji",
   "license": "MIT",
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.67",
-    "@vuepress/plugin-google-analytics": "2.0.0-beta.67",
-    "@vuepress/plugin-search": "2.0.0-beta.67",
-    "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.67",
-    "vuepress-plugin-md-enhance": "2.0.0-beta.238",
-    "vuepress-theme-hope": "2.0.0-beta.238"
+    "@vuepress/bundler-vite": "2.0.0-rc.7",
+    "@vuepress/plugin-feed": "2.0.0-rc.3",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.12",
+    "nodejs-jieba": "^0.1.2",
+    "typescript": "^5.3.3",
+    "vue": "^3.4.19",
+    "vuepress": "2.0.0-rc.7",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.23",
+    "vuepress-plugin-search-pro": "2.0.0-rc.23",
+    "vuepress-theme-hope": "2.0.0-rc.23"
   }
 }

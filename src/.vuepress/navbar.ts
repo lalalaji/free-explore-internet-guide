@@ -1,6 +1,6 @@
-import type { HopeThemeNavbarConfig } from "vuepress-theme-hope";
+import { navbar } from 'vuepress-theme-hope'
 
-export const navbar: HopeThemeNavbarConfig = [
+export default navbar([
   {
     text: '代理',
     children: [
@@ -10,8 +10,8 @@ export const navbar: HopeThemeNavbarConfig = [
       '/proxy/free-cloudflare-worker-proxy',
       '/proxy/openclash.md',
       '/proxy/shadowsocks.md',
-      '/proxy/switchyomega.md',
-    ],
+      '/proxy/switchyomega.md'
+    ]
   },
   {
     text: '机场',
@@ -25,7 +25,7 @@ export const navbar: HopeThemeNavbarConfig = [
     children: [
       '/network/github.md',
       '/network/google-play-alter.md',
-      '/network/dns.md',
+      '/network/dns.md'
     ]
   },
   {
@@ -34,8 +34,8 @@ export const navbar: HopeThemeNavbarConfig = [
       '/privacy/session.md',
       '/privacy/syncthing.md',
       '/privacy/tor.md',
-      '/privacy/warp.md',
+      '/privacy/warp.md'
     ]
   },
-  '/about.md',
-]
+  '/about.md'
+])
