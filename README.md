@@ -15,7 +15,7 @@
 机场介绍：
 
 - [自用机场推荐 glados](./airport/glados.md)
-- [自用机场推荐 sockboom](./airport/sockboom.md)
+- [~~自用机场推荐 sockboom（已跑路）~~](./airport/sockboom.md)
 
 网络问题：
 
