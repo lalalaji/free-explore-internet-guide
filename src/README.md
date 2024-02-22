@@ -3,17 +3,25 @@
 教你如何科学上网。你还在为没有办法访问某些网站和服务而烦恼吗？可以来看看我，或许会对你有些帮助。
 
 > [!tip]
-> 前段时间因为 freenom 域名问题网站挂了好几天，为了避免迷路建议 star [本仓库](https://github.com/lalalaji/free-explore-internet-guide)。现在域名回来了，又可以正常访问了，网站主域名<https://lalalaji.xyz>，备用域名<https://lalalaji.tk>，欢迎收藏。
+> 前段时间因为 freenom 域名问题网站挂了好几天，为了避免迷路建议 star [本仓库](https://github.com/lalalaji/free-explore-internet-guide)。现在域名回来了，又可以正常访问了，网站主域名<https://lalalaji.xyz>，备用域名<https://lalalaji.tk>，欢迎访问。
+
+推荐阅读：
+
+- [Clash Verge Rev 使用指南](./proxy/clash-verge-rev.md)
+- [Clash Meta For Android 使用指南](./proxy/clash-meta-for-android.md)
 
 代理软件介绍：
 
-- [shadowsocks 简介](./proxy/shadowsocks.md)
+- [~~Clash For Windows~~ 使用指南](./proxy/cfw.md)，已删库跑路，推荐改用 [Clash Verge Rev](./proxy/clash-verge-rev.md)
+- [~~Clash For Android~~ 使用指南](./proxy/cfa.md)，已删库跑路，推荐改用 [Clash Meta For Android](./proxy/clash-meta-for-android.md)
+- [~~switchyomega 扩展~~](./proxy/switchyomega.md)，基于规则对网页分别使用代理的浏览器扩展，即将被浏览器停止支持，参见 [作者推特](https://twitter.com/_catus/status/1759413399270936672)
+
+进阶阅读：
+
+- [shadowsocks 教程](./proxy/shadowsocks.md)
 - [Clash 教程](./proxy/clash.md)
-- [白嫖 Cloudflare Worker 免费翻墙教程](./proxy/free-cloudflare-worker-proxy.md)
-- [Clash For Windows 教程](./proxy/cfw.md)
-- [Clash For Android 教程](./proxy/cfa.md)
 - [openclash 教程](./proxy/openclash.md)
-- [switchyomega 扩展](./proxy/switchyomega.md)，让浏览器识别国内外网站，智能应用代理
+- [白嫖 Cloudflare Worker 免费翻墙教程](./proxy/free-cloudflare-worker-proxy.md)
 
 机场介绍：
 
