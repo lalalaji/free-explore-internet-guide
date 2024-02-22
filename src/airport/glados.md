@@ -1,10 +1,8 @@
----
-next: /proxy/cfw.md
----
-
 # 自用机场推荐——Glados
 
-> 如果觉得 glados 挺好用的话，就可以考虑购买了。在购买之前也可以填写一下我的邀请码`ZI0FM-ZYSS9-6P4NT-47NSN`，我们都会获得一定天数的奖励。
+> [!tip]
+> 如果觉得 glados 挺好用的话，在购买之前也可以填写一下我的邀请码，我们都会获得一定天数的奖励。这也是对我的激励，谢谢！
+> `ZI0FM-ZYSS9-6P4NT-47NSN`
 
 ## 前言
 
@@ -12,38 +10,40 @@ next: /proxy/cfw.md
 
 ## glados
 
-所以对于只想上网看点东西的普通用户来说，其实购买机场的服务是一个更好的选择。现在很多机场用起来其实都挺方便的，服务也挺全的。这里就给大家介绍我自己在用的机场服务——glados。目前我用了小半年，用起来挺不错的，glados 的网址如下。
-
-<https://glados.rocks/>
+所以对于只想上网看点东西的普通用户来说，其实购买机场的服务是一个更好的选择。现在很多机场用起来其实都挺方便的，服务也挺全的。这里就给大家介绍我自己在用的机场服务——[glados](https://glados.rocks/)。目前我用了三年多了，用起来挺不错的。
 
 ### 套餐
 
 首先介绍一下 glados 的套餐，分为多个版本，~~套餐调整之后以前的月付 11 元的基础版套餐没了~~。glados 支持在购买前试用，所以你大可以先试用一下再决定要不要购买。
 
-![glados套餐](/img/glados套餐.png)
+![glados 套餐](../.vuepress/public/img/glados-pricing.png)
 
 ### 使用
 
-然后按照 glados 的提示下载 Clash For Windows（以下简称 cfw），这是一个功能强大的 clash 图形客户端，支持多种协议。
+然后按照 glados 的提示下载 Clash For Windows，导入订阅链接即可使用。
 
-![安装clash](/img/glados使用.png)
+![安装 Clash For Windows](../.vuepress/public/img/glados-usage.png)
 
-安装好 cfw 后，打开软件，在按照官网的提示点击*添加订阅*按钮(如上图所示)，cfw 应该就会收到请求并自动添加订阅。然后点击左边的 General，选中 System Proxy 开启系统代理；再点击左边的 Proxies，点击上方的 Rule 按钮，将代理规则改为规则模式。这时候就应该可以随心所欲的上网了，你可以打开浏览器访问一下[谷歌](https://www.google.com)，不出意外的话应该就可以成功访问了。
+安装好 Clash For Windows 后，打开软件，在按照官网的提示点击*添加订阅*按钮（如上图所示），Clash For Windows 应该就会收到请求并自动添加订阅。然后点击左边的 General，选中 System Proxy 开启系统代理；再点击左边的 Proxies，点击上方的 Rule 按钮，将代理规则改为规则模式。这时候就应该可以随心所欲的上网了，你可以打开浏览器访问一下 [谷歌](https://www.google.com)，不出意外的话应该就可以成功访问了。
 
-![使用cfw](/img/glados界面.png)
+当然，你这时候应该也发现了，glados 提供的不是单个节点的服务，而是很多个节点，这些节点由 clash 来负责，可以根据延迟和配置文件里预先设定好的规则进行切换。这样我们的上网可用性就会大大提高。当然这也有一个缺点，因为节点会自动切换，所以有时候一些网站会判定成异地登录，触发验证机制。遇到这种情况的话，可以找到 Proxy 节点组，选择一个延迟较低的节点组而不是默认的自动切换 Auto 节点组，这样就不会自动切换了。
 
-当然，你这时候应该也发现了，glados 提供的不是单个节点的服务，而是很多个节点，这些节点由 clash 来负责，可以根据延迟和配置文件里预先设定好的规则进行切换。这样我们的上网可用性就会大大提高。当然这也有一个缺点，因为节点会自动切换，所以有时候一些网站会判定成异地登录，触发验证机制。遇到这种情况的话，可以将规则切换为 Global（全局），然后固定选择一个节点，这样就不会自动切换了。
+![节点组](../.vuepress/public/img/glados-20240222222550.png)
 
-如果你平时只使用浏览器上网，而不需要其他软件科学上网的话，也可以关闭系统代理。通过[switchyomega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)这个浏览器扩展来控制访问互联网时使用的代理。如果你使用的软件不支持系统代理，也可以在 cfw 中开启隧道模式，这类似于 VPN，会让整个操作系统的网络都通过代理连接。
+### 多客户端支持
 
-如果需要其他系统的客户端，glados 也有相关的帮助，照着网页上的提示下载对应的客户端就可以了。
+如果需要其他系统的客户端，glados 也有相关的帮助信息，照着网页上的提示下载对应的客户端就可以了。这也是我选择 glados 的一个原因，客户端的支持比较完善，除了常用的 clash 相关客户端以外，还支持 shadowrocket、surfboard、singbox、wireguard 、netch 游戏加速等多种类型，可以满足各种需求。
+
+![多种客户端](../.vuepress/public/img/glados-20240222223636.png)
+
+![更多客户端](../.vuepress/public/img/glados-20240222223704.png)
 
 ### 签到
 
-glados 可以通过每日签到的方式增加使用天数，这个每日签到几率还是很高的，相当于变相打折，这一点做的还是蛮好的。可以将[签到地址](https://glados.rocks/console/checkin)收藏到浏览器里，每天记得签到。
+glados 可以通过每日签到的方式增加使用天数，每日签到获取随机点数，满 100 点可以兑换 10 天会员。可以将 [签到地址](https://glados.rocks/console/checkin) 收藏到浏览器里，每天记得签到。
 
 ### 优惠码
 
-<https://glados.rocks/console/clash>
-
-如果觉得 glados 挺好用的话，就可以考虑购买了。在购买之前也可以填写一下我的邀请码`ZI0FM-ZYSS9-6P4NT-47NSN`，我们都会获得一定天数的奖励。
+> [!tip]
+> 如果觉得 glados 挺好用的话，在购买之前也可以填写一下我的邀请码，我们都会获得一定天数的奖励。这也是对我的激励，谢谢！
+> `ZI0FM-ZYSS9-6P4NT-47NSN`
