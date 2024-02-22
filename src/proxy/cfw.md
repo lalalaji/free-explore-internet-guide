@@ -1,26 +1,24 @@
----
-prev: /airport/glados.md
----
+# ~~Clash For Windows 使用指南（已删库跑路）~~
 
-# Clash For Windows 教程
+> [!warning]
+> 自 Clash 跑路事件之后，Clash For Windows 软件作者已经删库跑路。虽然目前软件还可以继续使用，但是以后再也不会有更新，还在使用的用户且用且珍惜。下载安装网络上的 Clash For Windows 软件时请仔细甄别来源，不要安装来历不明的软件。如果想寻找替代品的话，可以看看 [Clash Verge Rev](./clash-verge-rev.md)，目前还在积极维护。
 
-看了前一篇文章（[自用机场推荐——Glados](/airport/glados.md)）的朋友或许对 clash for windows（以下简称 cfw）这个软件的功能不太了解，这里就来简单介绍一下这个软件的功能。
+看了前一篇文章（[自用机场推荐——Glados](/airport/glados.md)）的朋友或许对 Clash For Windows 这个软件的功能不太了解，这里就来简单介绍一下这个软件的功能。
 
-如果你需要更详细的文档，也可以直接查看下面的官方文档，里面详细介绍了 cfw 的各项功能。我这里只简单介绍一下几个常用的功能。
+如果你需要更详细的文档，也可以直接查看下面的官方文档，里面详细介绍了 Clash For Windows 的各项功能。我这里只简单介绍一下几个常用的功能。
 
-<https://docs.cfw.lbyczf.com>
+~~<https://docs.cfw.lbyczf.com>（链接已失效）~~
 
 ## 下载软件
 
-cfw 的安装包可以在 Github 上找到，链接<https://github.com/Fndroid/clash_for_windows_pkg/releases>，找形如`Clash.for.Windows.Setup.0.20.14.exe`的链接，这就是要下载的 Windows 版安装包。如果找不到这样的链接，点击下方的*Show all assets*就可以展开所有下载包了。
-
-如果下载速度慢，可以右键点击链接，选择*复制链接地址*，然后将这个形如`https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.14/Clash.for.Windows.Setup.xxxx.exe`的链接复制到[ghproxy](https://ghproxy.com)中代理下载，应该就可以下载成功了。
+> [!warning]
+> Clash For Windows 原仓库已经删除，没有官方链接了。这里我给出 glados 机场里提供的 [Clash For Windows 下载链接](https://glados.one/tools/Clash.for.Windows.Setup.exe)，虽然不是最新版的（也不会再有最新版了），但是仍然可以使用。如果你想继续使用的话也是可以的。
 
 ## 快速上手
 
 ### 导入配置文件
 
-当你购买了支持 Clash 的机场订阅服务之后，应该会获得一个 Clash 配置文件订阅地址，访问这个地址即可下载配置文件。cfw 支持从订阅地址下载配置，切换到 Profile 界面，即可进行如下操作。
+当你购买了支持 Clash 的机场订阅服务之后，应该会获得一个 Clash 配置文件订阅地址，访问这个地址即可下载配置文件。Clash For Windows 支持从订阅地址下载配置，切换到 Profile 界面，即可进行如下操作。
 
 1. 将订阅地址复制粘贴到这里
 1. 点击下载按钮即可下载配置文件
@@ -29,25 +27,25 @@ cfw 的安装包可以在 Github 上找到，链接<https://github.com/Fndroid/c
 
 ![添加订阅](/img/cfw-profile.png)
 
-如果无法 cfw 下载配置文件失败，也可以从浏览器或者其他地方先下载配置文件，然后拖动到 cfw 软件上，一样可以启用配置。
+如果 Clash For Windows 下载配置文件失败，也可以从浏览器或者其他地方先下载配置文件，然后拖动到 Clash For Windows 软件上，一样可以启用配置。
 
 ### 开启代理
 
-导入配置文件之后，返回 General 界面，开启系统代理以及开机自启，即可开始使用 cfw 代理上网。
+导入配置文件之后，返回 General 界面，开启系统代理以及开机自启，即可开始使用 Clash For Windows 代理上网。
 
 ![开启代理](/img/cfw-start.png)
 
-如果你仅需要在浏览器中使用代理上网，可以参考[Switchy Omega 浏览器扩展](/proxy/switchyomega.md)这一篇的内容配置扩展，配置完毕后关闭系统代理，这样就可以避免那些使用系统代理的程序走国外节点，反而导致速度变慢的问题。
+如果你仅需要在浏览器中使用代理上网，可以参考 [Switchy Omega 浏览器扩展](/proxy/switchyomega.md) 这一篇的内容配置扩展，配置完毕后关闭系统代理，这样就可以避免那些使用系统代理的程序走国外节点，反而导致速度变慢的问题。
 
 ### 测试节点
 
-支持 clash 的机场通常都包含多个节点，如果某个节点不可用，也可以在 cfw 中切换到其他节点。在切换节点之前也可以通过点击界面上的测试图标来测试节点的延迟。
+支持 clash 的机场通常都包含多个节点，如果某个节点不可用，也可以在 Clash For Windows 中切换到其他节点。在切换节点之前也可以通过点击界面上的测试图标来测试节点的延迟。
 
 ![测试节点](/img/cfw-proxies.png)
 
 ## 功能设置
 
-有一些 cfw 设置我会顺便开启，如果你觉得有用的话，也可以和我一样设置。
+有一些 Clash For Windows 设置我会顺便开启，如果你觉得有用的话，也可以和我一样设置。
 
 ### 自动更新配置
 
@@ -59,13 +57,13 @@ cfw 的安装包可以在 Github 上找到，链接<https://github.com/Fndroid/c
 
 ### 允许局域网连接
 
-先来看看 cfw 的主界面，在这里可以设置常用的配置。如果你在家里的话，建议允许局域网连接，这样同一路由器下的其他设备就可以通过你的设备来翻墙了，有时候不方便设置 cfw 的时候会很有用。
+先来看看 Clash For Windows 的主界面，在这里可以设置常用的配置。如果你在家里的话，建议允许局域网连接，这样同一路由器下的其他设备就可以通过你的设备来翻墙了，有时候不方便设置 Clash For Windows 的时候会很有用。
 
 - Port，本地代理使用的端口号
 - Allow LAN，是否允许本地局域网连接，如果允许的话，同一局域网的其他电脑或手机也可以通过代理访问互联网
 - IPv6，是否启用 ipv6，如果你的运营商以及家里的路由器都支持 ipv6 的话就可以开启
 - UWP Loopback，win 系统下 uwp 应用默认直连，无法走代理，点击它可以启动调试工具解除该限制
-- System Proxy，是否启用系统代理，因为 cfw 的订阅规则一般包含了各种地址的访问规则，所以启用系统代理也没有什么影响
+- System Proxy，是否启用系统代理，因为 Clash For Windows 的订阅规则一般包含了各种地址的访问规则，所以启用系统代理也没有什么影响
 - Start with Windows，是否开机自启
 
 ![主界面配置](/img/cfw-general.png)
@@ -84,17 +82,17 @@ cfw 启动的时候会开启软件界面，需要手动点叉让其最小化到�
 
 ### TUN 模式全局代理
 
-系统代理可以应对大多数情况，但是有些程序它不吃系统代理，也没有设置代理选项的地方。这时候如果想要使用代理就可以使用 TUN Mode，该模式会新增一块虚拟网卡，将所有网络流量导入这块网卡，这样就可以实现全局代理，让所有程序都能通过代理运行。不过这种情况下可能导致一些需要直连的程序也走代理运行，这时候可能需要手动添加规则，具体配置方法参考[clash](./clash.md)。
+系统代理可以应对大多数情况，但是有些程序它不吃系统代理，也没有设置代理选项的地方。这时候如果想要使用代理就可以使用 TUN Mode，该模式会新增一块虚拟网卡，将所有网络流量导入这块网卡，这样就可以实现全局代理，让所有程序都能通过代理运行。不过这种情况下可能导致一些需要直连的程序也走代理运行，这时候可能需要手动添加规则，具体配置方法参考 [clash](./clash.md)。
 
-开启 TUN 模式需要先启用*Service Mode*。在 General 界面点击*Service Mode*右边的*Manage*，然后点击*Install*按钮，稍等片刻就会安装完毕，在这个过程中 cfw 会重启。开启成功之后，*Service Mode*旁边就会多出一个绿色的地球图标，表示开启成功。
+开启 TUN 模式需要先启用 *Service Mode*。在 General 界面点击 *Service Mode* 右边的 *Manage*，然后点击 *Install* 按钮，稍等片刻就会安装完毕，在这个过程中 Clash For Windows 会重启。开启成功之后，*Service Mode* 旁边就会多出一个绿色的地球图标，表示开启成功。
 
-然后再点击*TUN Mode*的开关，就可以开启 TUN 模式了。遇到问题可以参考[官方文档 常见问题](https://docs.cfw.lbyczf.com/contents/questions.html)，列出了很多常见问题以及解决办法。
+然后再点击 *TUN Mode* 的开关，就可以开启 TUN 模式了。遇到问题可以参考 [官方文档 常见问题](https://docs.cfw.lbyczf.com/contents/questions.html)，列出了很多常见问题以及解决办法。
 
 ## 高级功能
 
 ### mixin
 
-mixin 是 cfw 的一项高级功能，允许用户手动添加一部分 clash 配置，然后 cfw 会将其和订阅配置混合在一起。
+mixin 是 Clash For Windows 的一项高级功能，允许用户手动添加一部分 clash 配置，然后 Clash For Windows 会将其和订阅配置混合在一起。
 
 这个功能非常有用，既可以让用户使用机场订阅的配置，又能够让用户灵活的修改一些规则。mixin 功能需要用户手动编辑配置文件，所以只适合了解 clash 配置文件各项功能的高级用户使用。
 
@@ -107,6 +105,9 @@ mixin 的开启方式很简单，在 clash 主界面找到 mixin，点击旁边�
 编辑 mixin 配置文件的时候要格外小心，如果配置内容或者文件格式出错，会导致 clash 无法正常代理。遇到这种情况时，先关掉 mixin 功能，然后检查并修改 mixin 配置文件，修改完成以后，clash 就能正常工作了。
 
 下面是我根据<https://github.com/Loyalsoldier/clash-rules>项目而添加的配置文件，适合 glados 机场。如果你使用的其他机场的服务，记得将规则中的`Proxy`改为你机场配置文件定义中的 Proxy Group 的名字。
+
+<details>
+  <summary>配置文件</summary>
 
 ```yaml
 mixin: # object
@@ -229,14 +230,16 @@ mixin: # object
     - MATCH,Proxy
 ```
 
+</details>
+
 ## 疑难解答
 
 ### 开启系统代理后，UWP 应用无法上网了
 
-这是 Windows 系统的一个限制，UWP 无法访问本地回环地址代理。所以当启用了系统代理之后，UWP 应用就无法上网了。解决办法也很简单，在 General 界面找到*UWP Loopback*，打开工具，然后排除需要访问网络的 UWP 即可。
+这是 Windows 系统的一个限制，UWP 无法访问本地回环地址代理。所以当启用了系统代理之后，UWP 应用就无法上网了。解决办法也很简单，在 General 界面找到 *UWP Loopback*，打开工具，然后排除需要访问网络的 UWP 即可。
 
 ![UWP Loopback](/img/cfw-uwp-loopback.png)
 
-如果不确定排除哪个应用，点击*Exemplify All*解除所有 UWP 的限制，然后点击*Save Changes*保存即可。
+如果不确定排除哪个应用，点击 *Exemplify All* 解除所有 UWP 的限制，然后点击 *Save Changes* 保存即可。
 
 ![Exemplify All](/img/cfw-uwp-loopback-acleu.png)
