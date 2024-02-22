@@ -4,21 +4,21 @@ Github 是全球最大的开源代码托管平台，上面有大量的开源资�
 
 ## Github 镜像访问
 
-下载[steamcommunity302](https://www.dogfight360.com/blog/686/)，并使用管理员权限打开。打开设置，在*Github 访问*上打勾，然后保存设置。之后重新启动 steam 社区 302 程序，应该就可以无障碍访问 Github 了。
+下载 [steamcommunity302](https://www.dogfight360.com/blog/686/)，并使用管理员权限打开。打开设置，在 *Github 访问* 上打勾，然后保存设置。之后重新启动 steam 社区 302 程序，应该就可以无障碍访问 Github 了。
 
-![steam社区302](/img/steam社区302.png)
+![steam 社区 302](/img/steam 社区 302.png)
 
 如果没有办法使用这个软件，那就只能多试几次了。Github 并没有被墙完全阻断，所以如果访问出现问题，等一两分钟再刷新应该就可以访问了。
 
 ## 修改 hosts
 
-[github520](https://github.com/521xueweihan/GitHub520)项目提供了随时更新的国内优化过的 hosts，在一定程度上也可以解决 Github 访问问题。访问项目阅读自述文件，按照提示修改 hosts 后，应该就可以正常访问 Github 了。
+[github520](https://github.com/521xueweihan/GitHub520) 项目提供了随时更新的国内优化过的 hosts，在一定程度上也可以解决 Github 访问问题。访问项目阅读自述文件，按照提示修改 hosts 后，应该就可以正常访问 Github 了。
 
 修改 hosts 之后，Windows 系统下一般需要`ipconfig /flushdns`命令来刷新一下。
 
 ## Github 克隆
 
-如果只需要克隆 Github 项目的话，也可以看看[gitclone](https://gitclone.com)这个网站，提供了对 Github 大量项目的镜像，能以较快的速度进行克隆。
+如果只需要克隆 Github 项目的话，也可以看看 [gitclone](https://gitclone.com) 这个网站，提供了对 Github 大量项目的镜像，能以较快的速度进行克隆。
 
 不过如果你准备在 Github 上工作，那就不能依赖这个网站。还是得自己想办法，才能正常访问并把代码提交到 Github 上。
 
@@ -28,8 +28,6 @@ Github 是全球最大的开源代码托管平台，上面有大量的开源资�
 
 这里提供了几个 Github 文件下载加速的网站。
 
-- <https://ghproxy.com>
-- <https://shrill-pond-3e81.hunsh.workers.dev>
-- <https://toolwa.com/github>
+- <https://mirror.ghproxy.com/>
 
-使用起来很简单，在 Github Release 页面找到想要下载的链接，右键选择复制链接地址，然后将地址粘贴到上述网站，即可以较快的速度进行下载。
+使用起来很简单，在 Github Release 页面找到想要下载的链接，右键选择复制链接地址，然后将地址粘贴到上述网站，就能以较快的速度进行下载。
