@@ -4,6 +4,7 @@ export default navbar([
   {
     text: '代理',
     children: [
+      '/proxy/clash-verge-rev.md',
       '/proxy/cfa.md',
       '/proxy/cfw.md',
       '/proxy/clash.md',
