@@ -2,4 +2,4 @@
 
 教你如何科学上网。你还在为没有办法访问某些网站和服务而烦恼吗？可以来看看我，或许会对你有些帮助。
 
-前段时间因为 freenom 域名问题网站挂了好几天，为了避免迷路建议 star [本仓库](https://github.com/lalalaji/free-explore-internet-guide)。现在域名回来了，又可以正常访问了，网站主域名<https://lalalaji.tk>，备用域名<https://lalalaji.xyz>，欢迎收藏。
+前段时间因为 freenom 域名问题网站挂了好几天，为了避免迷路建议 star [本仓库](https://github.com/lalalaji/free-explore-internet-guide)。现在域名回来了，又可以正常访问了，网站主域名<https://lalalaji.xyz>，备用域名<https://lalalaji.tk>，欢迎收藏。

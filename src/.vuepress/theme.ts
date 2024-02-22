@@ -4,7 +4,7 @@ import navbar from './navbar'
 import sidebar from './sidebar'
 
 export default hopeTheme({
-  hostname: 'https://lalalaji.tk',
+  hostname: 'https://lalalaji.xyz',
 
   author: {
     name: 'lalalaji',
