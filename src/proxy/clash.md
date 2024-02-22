@@ -1,20 +1,21 @@
-# Clash 教程
+# Clash 内核使用指南
 
 clash 是一个使用 go 语言编写的基于规则的隧道软件，是目前主流的代理软件之一。clash 支持 shadowsocks、vmess、trojan 等多种协议，可以用一个软件连接多个代理服务端。而它强大的基于规则的分流功能，可以灵活的配置国内和国外的流量分流。这也是 clash 目前非常流行的原因。
 
 本文主要介绍 clash 命令行以及 clash 的核心功能以及配置，可以作为 clash 图形界面客户端的补充阅读，让大家对 clash 图形客户端提供的功能有更好的理解。
 
-## 简单介绍
+## clash 删库跑路事件
 
-clash 是一个开源的软件，托管在 github 上，这里是[项目官网](https://github.com/Dreamacro/clash)，因为软件图标是一只黑猫，又被亲切的称为小猫咪。
+整个事件比较魔幻，也过去了一段时间，网络上也传得沸沸扬扬。各种小道消息我就不介绍了，只说重点。事件起因是 2023 年 11 月 2 日 Clash For Windows 作者在 Telegram 群里说江湖再见，软件随即删库跑路。第二天 clash 生态的其他作者闻风而动，为求自保纷纷删库跑路。小道消息说作者被抓并没有确切证据，大家也不用太过担心。clash 软件的生态很坚挺，仍然有不少开发者接手过来继续维护，只是选择确实比以前少了很多，软件生态还需要一定时间恢复。
 
-clash 项目有多个版本，没有什么特殊要求的话，使用 premium 版即可。
+## 软件分支
 
-- [开源版](https://github.com/Dreamacro/clash/releases)，托管在 Github 上的开源软件。
-- [Premium 版](https://github.com/Dreamacro/clash/releases/tag/premium)，Premium 版是开源版开发者开发的闭源私有版本，支持一些高级功能，可以免费使用。
-- [Meta 版](https://github.com/MetaCubeX/Clash.Meta)，也是根据开源版 fork 出来的分支，功能比原版多一点，但没有覆盖 Premium 版的全部功能。
+- [~~开源版~~](https://github.com/Dreamacro/clash/releases)，托管在 Github 上的开源软件。
+- [~~Premium 版~~](https://github.com/Dreamacro/clash/releases/tag/premium)，Premium 版是开源版开发者开发的闭源私有版本，支持一些高级功能，可以免费使用。
+- [~~Meta 版~~](https://github.com/MetaCubeX/Clash.Meta)，也是根据开源版 fork 出来的分支，功能比原版多一点，但没有覆盖 Premium 版的全部功能。
+- [mihomo](https://github.com/MetaCubeX/mihomo/tree/Alpha)，meta 版在跑路事件后避嫌而改的名字，我一开始还没认出来
 
-以上几个版本都是命令行软件，对于大众来说使用起来有诸多不便。大家最常用的还是各种基于 clash 开发的图形客户端，如安卓版[Clash for Android](https://github.com/Kr328/ClashForAndroid)、Windows 版[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)等等。
+以上几个版本都是命令行软件，对于大众来说使用起来有诸多不便。大家最常用的还是各种基于 clash 开发的图形客户端，如安卓版 [Clash Meta for Android](./clash-meta-for-android.md)、Windows 版 [Clash Verge Rev](./clash-verge-rev.md) 等等。
 
 这些图形客户端的使用方法同样在我的教程里有说明，大家可以顺便看看。
 
@@ -41,7 +42,7 @@ mkdir ~/.config/clash -p && cd ~/.config/clash
 然后是 clash 配置文件，可以自己编写，或者直接从机场获取订阅文件，将其命名为`config.yaml`，同样放置在目录下。接下来就是创建 docker compose 配置文件。
 
 <details>
-  <summary>创建docker compose配置文件</summary>
+  <summary>创建 docker compose 配置文件</summary>
 
 ```sh
 tee docker-compose.yml <<"EOL"
@@ -77,7 +78,7 @@ EOL
 
 ```sh
 docker compose up -d
-# 一些发行版的docker版本比较旧，使用下面的命令
+# 一些发行版的 docker 版本比较旧，使用下面的命令
 docker-compose up -d
 ```
 
@@ -87,7 +88,7 @@ docker-compose up -d
 docker ps -a
 ```
 
-然后，本地程序就可以通过 clash 的代理端口(默认是 7890，不同的机场订阅文件配置或许不同)访问网络了。
+然后，本地程序就可以通过 clash 的代理端口（默认是 7890，不同的机场订阅文件配置或许不同）访问网络了。
 
 ## 基本功能
 
@@ -99,22 +100,22 @@ docker ps -a
   <summary>端口配置部分</summary>
 
 ```yaml
-# HTTP代理端口
+# HTTP 代理端口
 # Port of HTTP(S) proxy server on the local end
 port: 7890
 
-# SOCKS5代理端口
+# SOCKS5 代理端口
 # Port of SOCKS5 proxy server on the local end
 socks-port: 7891
-# linux和macOS的透明代理端口
+# linux 和 macOS 的透明代理端口
 # Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
 # redir-port: 7892
 
-# linux的透明代理端口
+# linux 的透明代理端口
 # Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
 # tproxy-port: 7893
 
-# HTTP和SOCKS混合代理端口
+# HTTP 和 SOCKS 混合代理端口
 # HTTP(S) and SOCKS4(A)/SOCKS5 server on the same port
 # mixed-port: 7890
 
@@ -135,20 +136,20 @@ socks-port: 7891
   <summary>网络配置部分</summary>
 
 ```yaml
-# 设置为true的话，允许本地局域网的其他设备访问clash代理
+# 设置为 true 的话，允许本地局域网的其他设备访问 clash 代理
 # Set to true to allow connections to the local-end server from
 # other LAN IP addresses
 allow-lan: true
 
-# 当允许LAN设备访问的时候，此选项才生效
-# 设置clash要绑定的IP地址，'*'为绑定所有IP地址
+# 当允许 LAN 设备访问的时候，此选项才生效
+# 设置 clash 要绑定的 IP 地址，'*'为绑定所有 IP 地址
 # This is only applicable when `allow-lan` is `true`
 # '*': bind all IP addresses
 # 192.168.122.11: bind a single IPv4 address
 # "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
 bind-address: "*"
 
-# 是否启用ipv6功能
+# 是否启用 ipv6 功能
 # When set to false, resolver won't translate hostnames to IPv6 addresses
 ipv6: false
 
@@ -228,7 +229,7 @@ clash 的 DNS 功能需要配置 nameserver 和 fallback 两组名称服务器�
 一些应用需要真实 IP 地址才能正常工作，fake-ip-filter 指定的域名不会返回 fake-ip，而是真实域名。例如 QQ 网页版快捷登录，就利用了 qq 的域名`localhost.ptlogin2.qq.com`解析到本地回环地址来判断本地 QQ 是否登录。
 
 <details>
-  <summary>DNS配置部分</summary>
+  <summary>DNS 配置部分</summary>
 
 ```yaml
 # DNS server settings
@@ -483,14 +484,14 @@ clash 内置两个策略组，`DIRECT`是直连，`REJECT`是拒绝。除此以�
 
 ## Premium 特性
 
-这里介绍的配置文件仅支持 premium 版，要查看 premium 版的全部功能，可以访问[官方文档](https://github.com/Dreamacro/clash/wiki/Clash-Premium-Features)
+这里介绍的配置文件仅支持 premium 版，要查看 premium 版的全部功能，可以访问 [官方文档](https://github.com/Dreamacro/clash/wiki/Clash-Premium-Features)
 
 ### TUN 模式
 
 TUN 模式可以创建一个虚拟网卡，以实现无感的全局代理模式。使用 TUN 模式时推荐使用 DNS 的 fake-ip 模式。
 
 <details>
-  <summary>TUN配置</summary>
+  <summary>TUN 配置</summary>
 
 ```yaml
 tun:
@@ -537,7 +538,7 @@ script:
 context 包含的属性和方法如下，可以在脚本中使用。
 
 <details>
-  <summary>context属性</summary>
+  <summary>context 属性</summary>
 
 ```javascript
 interface Metadata {
@@ -668,6 +669,6 @@ Github 上有各种第三方规则集，可以选择使用。
 ## 参考资料
 
 - [Stash Wiki](https://stash.wiki)
-- [Clash Wiki 配置文件](https://github.com/Dreamacro/clash/wiki/Configuration)
-- [Clash for Windows 文档](https://docs.cfw.lbyczf.com)
-- [Unofficial Clash Wiki](https://lancellc.gitbook.io/clash/)
+- [~~Clash Wiki 配置文件~~](https://github.com/Dreamacro/clash/wiki/Configuration)
+- [~~Clash for Windows 文档~~](https://docs.cfw.lbyczf.com)
+- [~~Unofficial Clash Wiki~~](https://lancellc.gitbook.io/clash/)

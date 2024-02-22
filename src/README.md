@@ -19,7 +19,7 @@
 进阶阅读：
 
 - [shadowsocks 教程](./proxy/shadowsocks.md)
-- [Clash 教程](./proxy/clash.md)
+- [Clash 内核使用指南](./proxy/clash.md)
 - [openclash 教程](./proxy/openclash.md)
 - [白嫖 Cloudflare Worker 免费翻墙教程](./proxy/free-cloudflare-worker-proxy.md)
 
