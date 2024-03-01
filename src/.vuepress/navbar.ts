@@ -12,23 +12,24 @@ export default navbar([
       '/proxy/free-cloudflare-worker-proxy',
       '/proxy/openclash.md',
       '/proxy/shadowsocks.md',
-      '/proxy/switchyomega.md'
-    ]
+      '/proxy/switchyomega.md',
+    ],
   },
   {
     text: '机场',
     children: [
       '/airport/glados.md',
-      '/airport/sockboom.md'
-    ]
+      '/airport/dg1.md',
+      '/airport/sockboom.md',
+    ],
   },
   {
     text: '网络',
     children: [
       '/network/github.md',
       '/network/google-play-alter.md',
-      '/network/dns.md'
-    ]
+      '/network/dns.md',
+    ],
   },
   {
     text: '隐私',
@@ -36,8 +37,8 @@ export default navbar([
       '/privacy/session.md',
       '/privacy/syncthing.md',
       '/privacy/tor.md',
-      '/privacy/warp.md'
-    ]
+      '/privacy/warp.md',
+    ],
   },
-  '/about.md'
+  '/about.md',
 ])
