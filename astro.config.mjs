@@ -13,7 +13,7 @@ export default defineConfig({
 			},
 			editLink: {
 				baseUrl:
-					'https://github.com/lalalaji/free-explore-internet-guide/edit/main/docs/',
+					'https://github.com/lalalaji/free-explore-internet-guide/edit/main/',
 			},
 			head: [
 				{
