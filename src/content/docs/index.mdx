@@ -1,0 +1,43 @@
+---
+title: 🪜无障碍网上冲浪指南
+description: 无障碍网上冲浪指南
+template: splash
+hero:
+  tagline: 你还在为没有办法访问某些网站和服务而烦恼吗？可以来看看我，或许会对你有些帮助。
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+
+## 推荐阅读
+
+<Card title="推荐阅读" icon="open-book">
+
+- [Windows翻墙客户端Clash Verge Rev](/proxy/clash-verge-rev)
+- [安卓翻墙客户端Clash Meta For Android](/proxy/clash-meta-for-android)
+- [自用机场推荐——glados](/airport/glados)
+- [自用机场推荐——狗狗加速](/airport/dg1)
+
+</Card>
+
+## 进阶阅读
+
+<CardGrid stagger>
+  <Card title="代理软件" icon="rocket">
+    - [Windows翻墙客户端Clash Verge Rev](/proxy/clash-verge-rev)
+    - [安卓翻墙客户端Clash Meta For Android](/proxy/clash-meta-for-android)
+    - [clash内核使用和配置详解](/proxy/clash)
+  </Card>
+  <Card title="机场订阅" icon="telegram">
+    - [自用机场推荐——glados](/airport/glados)
+    - [自用机场推荐——狗狗加速](/airport/dg1)
+  </Card>
+  <Card title="保护隐私" icon="laptop">
+    - [tor浏览器](/privacy/tor)，有效保护隐私的安全浏览器
+    - [warp](/privacy/warp)，免费的全局代理VPN
+  </Card>
+  <Card title="进阶技术" icon="setting">
+    - [使用Cloudflare Workers搭建代理服务器](/proxy/free-cloudflare-worker-proxy)
+    - [openclash入门指南](/proxy/openclash)，OpenWrt路由器上使用的clash软件
+  </Card>
+</CardGrid>
