@@ -11,16 +11,19 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
 
 ## 推荐阅读
 
-<Card title="推荐阅读" icon="open-book">
-
-- [Windows翻墙客户端Clash Verge Rev](/proxy/clash-verge-rev)
-- [Windows翻墙客户端Clash Nyanpasu](/proxy/clash-nyanpasu)
-- [安卓苹果通用翻墙客户端Singbox](/proxy/singbox)
-- [安卓翻墙客户端Clash Meta For Android](/proxy/clash-meta-for-android)
-- [自用机场推荐——glados](/airport/glados)
-- [自用机场推荐——狗狗加速](/airport/dg1)
-
-</Card>
+<CardGrid stagger>
+  <Card title="推荐阅读" icon="open-book">
+    - [Windows翻墙客户端Clash Verge Rev](/proxy/clash-verge-rev)
+    - [Windows翻墙客户端Clash Nyanpasu](/proxy/clash-nyanpasu)
+    - [安卓苹果通用翻墙客户端Singbox](/proxy/singbox)
+    - [安卓翻墙客户端Clash Meta For Android](/proxy/clash-meta-for-android)
+    - [自用机场推荐——glados](/airport/glados)
+    - [自用机场推荐——狗狗加速](/airport/dg1)
+  </Card>
+    <Card title="免费节点" icon="puzzle">
+    - [免费翻墙节点](/proxy/free-proxy)，不想花钱的可以看看这个
+  </Card>
+</CardGrid>
 
 ## 进阶阅读
 
@@ -30,7 +33,6 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
     - [Windows翻墙客户端Clash Nyanpasu](/proxy/clash-nyanpasu)
     - [安卓苹果通用翻墙客户端Singbox](/proxy/singbox)
     - [安卓翻墙客户端Clash Meta For Android](/proxy/clash-meta-for-android)
-    - [clash内核使用和配置详解](/proxy/clash)
   </Card>
   <Card title="机场订阅" icon="telegram">
     - [自用机场推荐——glados](/airport/glados)
@@ -41,6 +43,7 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
     - [warp](/privacy/warp)，免费的全局代理VPN
   </Card>
   <Card title="进阶技术" icon="setting">
+    - [clash内核使用和配置详解](/proxy/clash)
     - [使用Cloudflare Workers搭建代理服务器](/proxy/free-cloudflare-worker-proxy)
     - [openclash入门指南](/proxy/openclash)，OpenWrt路由器上使用的clash软件
   </Card>
