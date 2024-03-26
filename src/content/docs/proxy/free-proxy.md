@@ -6,18 +6,24 @@ title: 免费翻墙节点
 
 ## 免费节点
 
-### FreeProxyTor
-
-[项目主页](github.com/MakeFortuneQuietly/FreeProxyTor) 中介绍了节点的使用方法。首先根据项目中的指引下载 v2ray 软件，然后在软件中导入订阅链接即可，使用方法和和 clash 大同小异，就不继续介绍了。
-
 ### get_subscribe
 
-[这个项目](https://github.com/ermaozi/get_subscribe) 同样搜集了一些免费节点供大家使用，支持 clash 和 v2ray。clash 对应的订阅地址我放到下面了，直接复制到 clash 客户端中即可使用。
+[get_subscribe 项目](https://github.com/ermaozi/get_subscribe) 搜集了一些免费节点供大家使用，支持 clash 和 v2ray。clash 对应的订阅地址我放到下面了，直接复制并导入到 clash 客户端中即可使用。
 
 ```txt
 https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
 ```
 
-这些免费节点我也没有测试过，只是添加到了 clash 软件中看了一下延迟，光是看延迟就感觉这些节点的质量不怎么样。如果实在不想购买机场服务，那就将就着用用这些免费节点吧。
+这些免费节点我也没有测试过，只是添加到了 clash 软件中看了一下延迟，光是看延迟就感觉这些节点的质量不怎么样。如果实在不想花钱购买机场服务，那就将就着用吧。
 
 ![免费节点延迟](../../../assets/image/free-proxy-20240304020532.png)
+
+### freenodes
+
+[这个项目](https://github.com/freenodes/freenodes) 同样提供了 clash 订阅链接，复制并导入到 clash 中即可使用。订阅链接我放到下面了。
+
+```txt
+https://fastly.jsdelivr.net/gh/freenodes/freenodes@main/ClashPremiumFree.yaml
+```
+
+速度我简单试用了一下，只能说能用罢了，想要流畅的看视频是别想了。
