@@ -27,3 +27,9 @@ title: Google Play 替代
 网站地址： <https://f-droid.org>
 
 ![F-Droid](../../../assets/image/f-droid.png)
+
+## APKBOT
+
+网站地址： <https://apk.bot>
+
+![APKBOT](../../../assets/image/apkbot.png)
