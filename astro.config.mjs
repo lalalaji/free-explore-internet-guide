@@ -50,6 +50,7 @@ export default defineConfig({
 					link: '/about',
 				},
 			],
+			credits: true,
 		}),
 	],
 });
