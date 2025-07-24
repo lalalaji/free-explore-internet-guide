@@ -12,12 +12,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.2",
-    "@astrojs/starlight": "^0.25.1",
-    "astro": "^4.11.5",
-    "eslint": "^8.57.0",
+    "@astrojs/check": "0.9.4",
+    "@astrojs/starlight": "0.35.2",
+    "@biomejs/biome": "^2.1.2",
+    "astro": "5.13.5",
     "sharp": "^0.32.6",
-    "typescript": "^5.3.3",
-    "typescript-eslint": "^7.1.0"
+    "typescript": "^5.8.3"
   }
 }

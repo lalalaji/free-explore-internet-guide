@@ -1,0 +1,18 @@
+{
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "always"
+		}
+	},
+	"linter": {
+		"rules": {
+			"recommended": true
+		}
+	},
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true
+	}
+}

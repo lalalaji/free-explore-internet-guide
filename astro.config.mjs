@@ -1,5 +1,5 @@
-import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,9 +8,13 @@ export default defineConfig({
 		starlight({
 			title: '🪜无障碍网上冲浪指南🪜',
 			favicon: './src/assets/favicon.ico',
-			social: {
-				github: 'https://github.com/lalalaji/free-explore-internet-guide',
-			},
+			social: [
+				{
+					icon: 'github',
+					label: 'github',
+					href: 'https://github.com/lalalaji/free-explore-internet-guide',
+				},
+			],
 			editLink: {
 				baseUrl:
 					'https://github.com/lalalaji/free-explore-internet-guide/edit/main/',
@@ -25,7 +29,8 @@ export default defineConfig({
 				},
 				{
 					tag: 'script',
-					content: 'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-MQYK3KRTDG");',
+					content:
+						'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-MQYK3KRTDG");',
 				},
 			],
 			sidebar: [

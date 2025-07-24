@@ -1,1 +1,1 @@
-pnpm dlx @astrojs/upgrade
+bunx @astrojs/upgrade
