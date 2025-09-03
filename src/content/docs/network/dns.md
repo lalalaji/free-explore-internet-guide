@@ -14,7 +14,7 @@ title: 设置域名解析服务
 
 打开程序之后，在设置中选择要使用的 DOH 服务器，然后点击保存。然后在软件主界面中点击左边的*设为系统 DNS*，这样就能使用 AuroraDNS 了。
 
-![AuroraDNS](../../../assets/image/AuroraDNS.png)
+![AuroraDNS](../../../assets/image/AuroraDNS.avif)
 
 ## NextDNS
 
@@ -22,7 +22,7 @@ NextDNS 在国内已经被墙，所以除非使用 AdGuard Home 做分流，否�
 
 NextDNS 支持统计信息，在官网注册一个账号之后，就可以获得自己的独特 DNS 解析地址，将设备的 DNS 设置为 NextDNS 之后，过一段时间就可以在 NextDNS 中看到统计信息了。
 
-![NextDNS](../../../assets/image/nextdns.png)
+![NextDNS](../../../assets/image/nextdns.avif)
 
 ## AdGuard Home
 
@@ -52,10 +52,10 @@ docker ps
 
 ### 设置
 
-adguardhome 的设置可以通过 web 界面来进行，通常需要配置的有*设置->DNS 设置->配置上游 DNS 服务器*，在这里配置 adguardhome 使用的 DNS 服务器，我目前在使用 IQDNS；*过滤器->DNS 拦截列表*，在这里配置要拦截的 DNS 列表，根据自己的需要启用相关的拦截列表即可。
+adguardhome 的设置可以通过 web 界面来进行，通常需要配置的有*设置->DNS 设置->配置上游 DNS 服务器*，在这里配置 adguardhome 使用的 DNS 服务器，我目前在使用 IQDNS；_过滤器->DNS 拦截列表_，在这里配置要拦截的 DNS 列表，根据自己的需要启用相关的拦截列表即可。
 
 配置完成之后，将家里各设备的 DNS 服务器设置为运行 AdGuard Home 的设备 IP 地址即可。如果设备是常驻的，也可以直接在路由器中将 DNS 服务器设置为 AdGuard Home，这样家里的其他设备就不需要设置了。在使用一段时间之后，还可以在 AdGuard Home 中查看统计信息。
 
-![adguardhome 统计信息](../../../assets/image/adguardhome-stats.png)
+![adguardhome 统计信息](../../../assets/image/adguardhome-stats.avif)
 
 AdGuard Home 还有很多高级用法，比如设置国内外域名分流等等，以后在介绍吧。

@@ -6,9 +6,9 @@ Github 是全球最大的开源代码托管平台，上面有大量的开源资�
 
 ## Github 镜像访问
 
-下载 [steamcommunity302](https://www.dogfight360.com/blog/686/)，并使用管理员权限打开。打开设置，在 *Github 访问* 上打勾，然后保存设置。之后重新启动 steam 社区 302 程序，应该就可以无障碍访问 Github 了。
+下载 [steamcommunity302](https://www.dogfight360.com/blog/686/)，并使用管理员权限打开。打开设置，在 _Github 访问_ 上打勾，然后保存设置。之后重新启动 steam 社区 302 程序，应该就可以无障碍访问 Github 了。
 
-![steam 社区 302](../../../assets/image/steam-community-302.png)
+![steam 社区 302](../../../assets/image/steam-community-302.avif)
 
 如果没有办法使用这个软件，那就只能多试几次了。Github 并没有被墙完全阻断，所以如果访问出现问题，等一两分钟再刷新应该就可以访问了。
 

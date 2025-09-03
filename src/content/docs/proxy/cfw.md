@@ -1,9 +1,9 @@
 ---
 title: Clash For Windows 使用指南（已删库跑路）
 sidebar:
-    badge:
-        text: 已跑路
-        variant: danger
+  badge:
+    text: 已跑路
+    variant: danger
 ---
 
 :::caution
@@ -33,7 +33,7 @@ Clash For Windows 原仓库已经删除，没有官方链接了。这里我给�
 1. 下载之后再点一下，出现绿色竖线表示已经启用该配置
 1. 将来如果需要更新的话，点击右边的刷新按钮即可
 
-![添加订阅](../../../assets/image/cfw-profile.png)
+![添加订阅](../../../assets/image/cfw-profile.avif)
 
 如果 Clash For Windows 下载配置文件失败，也可以从浏览器或者其他地方先下载配置文件，然后拖动到 Clash For Windows 软件上，一样可以启用配置。
 
@@ -41,7 +41,7 @@ Clash For Windows 原仓库已经删除，没有官方链接了。这里我给�
 
 导入配置文件之后，返回 General 界面，开启系统代理以及开机自启，即可开始使用 Clash For Windows 代理上网。
 
-![开启代理](../../../assets/image/cfw-start.png)
+![开启代理](../../../assets/image/cfw-start.avif)
 
 如果你仅需要在浏览器中使用代理上网，可以参考 [Switchy Omega 浏览器扩展](/proxy/switchyomega) 这一篇的内容配置扩展，配置完毕后关闭系统代理，这样就可以避免那些使用系统代理的程序走国外节点，反而导致速度变慢的问题。
 
@@ -49,7 +49,7 @@ Clash For Windows 原仓库已经删除，没有官方链接了。这里我给�
 
 支持 clash 的机场通常都包含多个节点，如果某个节点不可用，也可以在 Clash For Windows 中切换到其他节点。在切换节点之前也可以通过点击界面上的测试图标来测试节点的延迟。
 
-![测试节点](../../../assets/image/cfw-proxies.png)
+![测试节点](../../../assets/image/cfw-proxies.avif)
 
 ## 功能设置
 
@@ -59,9 +59,9 @@ Clash For Windows 原仓库已经删除，没有官方链接了。这里我给�
 
 你也可以在上面点击右键，选择设置，这样就会弹出一个对话框，在这里可以设置自动更新配置文件的间隔。机场不可能天天更新配置文件，所以 12 或者 24 小时足够了。
 
-![打开设置](../../../assets/image/cfw-profile-settings.png)
+![打开设置](../../../assets/image/cfw-profile-settings.avif)
 
-![设置自动更新间隔](../../../assets/image/cfw-autoupdate.png)
+![设置自动更新间隔](../../../assets/image/cfw-autoupdate.avif)
 
 ### 允许局域网连接
 
@@ -74,27 +74,27 @@ Clash For Windows 原仓库已经删除，没有官方链接了。这里我给�
 - System Proxy，是否启用系统代理，因为 Clash For Windows 的订阅规则一般包含了各种地址的访问规则，所以启用系统代理也没有什么影响
 - Start with Windows，是否开机自启
 
-![主界面配置](../../../assets/image/cfw-general.png)
+![主界面配置](../../../assets/image/cfw-general.avif)
 
 ### 静默启动
 
 Clash For Windows 启动的时候会开启软件界面，需要手动点叉让其最小化到系统托盘区，开启静默启动选项，可以让它自动在后台悄悄运行。
 
-![静默启动](../../../assets/image/cfw-silent-start.png)
+![静默启动](../../../assets/image/cfw-silent-start.avif)
 
 ### 按延迟排序节点
 
 如果需要按延迟排序节点的话，按下图设置。这样在节点界面所有节点就会以延迟排序，方便我们手动选择节点。
 
-![按延迟排序](../../../assets/image/cfw-orderby-latency.png)
+![按延迟排序](../../../assets/image/cfw-orderby-latency.avif)
 
 ### TUN 模式全局代理
 
 系统代理可以应对大多数情况，但是有些程序它不吃系统代理，也没有设置代理选项的地方。这时候如果想要使用代理就可以使用 TUN Mode，该模式会新增一块虚拟网卡，将所有网络流量导入这块网卡，这样就可以实现全局代理，让所有程序都能通过代理运行。不过这种情况下可能导致一些需要直连的程序也走代理运行，这时候可能需要手动添加规则，具体配置方法参考 [clash 内核配置和使用详解](/proxy/clash)。
 
-开启 TUN 模式需要先启用 *Service Mode*。在 General 界面点击 *Service Mode* 右边的 *Manage*，然后点击 *Install* 按钮，稍等片刻就会安装完毕，在这个过程中 Clash For Windows 会重启。开启成功之后，*Service Mode* 旁边就会多出一个绿色的地球图标，表示开启成功。
+开启 TUN 模式需要先启用 _Service Mode_。在 General 界面点击 _Service Mode_ 右边的 _Manage_，然后点击 _Install_ 按钮，稍等片刻就会安装完毕，在这个过程中 Clash For Windows 会重启。开启成功之后，_Service Mode_ 旁边就会多出一个绿色的地球图标，表示开启成功。
 
-然后再点击 *TUN Mode* 的开关，就可以开启 TUN 模式了。遇到问题可以参考 [官方文档 常见问题](https://docs.cfw.lbyczf.com/contents/questions.html)，列出了很多常见问题以及解决办法。
+然后再点击 _TUN Mode_ 的开关，就可以开启 TUN 模式了。遇到问题可以参考 [官方文档 常见问题](https://docs.cfw.lbyczf.com/contents/questions.html)，列出了很多常见问题以及解决办法。
 
 ## 高级功能
 
@@ -106,7 +106,7 @@ mixin 是 Clash For Windows 的一项高级功能，允许用户手动添加一�
 
 mixin 的开启方式很简单，在 clash 主界面找到 mixin，点击旁边的齿轮图标，就能打开编辑器，在其中按需编辑配置文件即可。最后开启 mixin 开关，就能启用它了。
 
-![mixin](../../../assets/image/cfw-mixin.png)
+![mixin](../../../assets/image/cfw-mixin.avif)
 
 该文件是 YAML 格式的文件，主要结构就是 mixin 对象，所有要混合的配置都必须在 mixin 对象下。
 
@@ -244,10 +244,10 @@ mixin: # object
 
 ### 开启系统代理后，UWP 应用无法上网了
 
-这是 Windows 系统的一个限制，UWP 无法访问本地回环地址代理。所以当启用了系统代理之后，UWP 应用就无法上网了。解决办法也很简单，在 General 界面找到 *UWP Loopback*，打开工具，然后排除需要访问网络的 UWP 即可。
+这是 Windows 系统的一个限制，UWP 无法访问本地回环地址代理。所以当启用了系统代理之后，UWP 应用就无法上网了。解决办法也很简单，在 General 界面找到 _UWP Loopback_，打开工具，然后排除需要访问网络的 UWP 即可。
 
-![UWP Loopback](../../../assets/image/cfw-uwp-loopback.png)
+![UWP Loopback](../../../assets/image/cfw-uwp-loopback.avif)
 
-如果不确定排除哪个应用，点击 *Exemplify All* 解除所有 UWP 的限制，然后点击 *Save Changes* 保存即可。
+如果不确定排除哪个应用，点击 _Exemplify All_ 解除所有 UWP 的限制，然后点击 _Save Changes_ 保存即可。
 
-![Exemplify All](../../../assets/image/cfw-uwp-loopback-acleu.png)
+![Exemplify All](../../../assets/image/cfw-uwp-loopback-acleu.avif)

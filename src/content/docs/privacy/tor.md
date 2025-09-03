@@ -6,7 +6,7 @@ title: Tor 浏览器
 
 Tor 浏览器通过仔细封堵每个可能泄露隐私的地方，最大限度的保护了用户的隐私和匿名性。如果你对隐私有着极致的要求，那么 Tor 浏览器就是你的首选。
 
-![Tor](../../../assets/image/tor.png)
+![Tor](../../../assets/image/tor.avif)
 
 ## 安装
 

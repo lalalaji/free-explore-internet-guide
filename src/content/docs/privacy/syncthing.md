@@ -22,7 +22,7 @@ scoop install syncthing
 
 下载好之后，就可以通过双击`syncthing.exe`或者命令行运行`syncthing`的方式启动软件。启动之后应当会自动打开浏览器，并显示 web 管理界面。
 
-![syncthing](../../../assets/image/syncthing.png)
+![syncthing](../../../assets/image/syncthing.avif)
 
 ### 添加远程设备
 
@@ -38,8 +38,8 @@ scoop install syncthing
 
 首先需要保护的是 web 界面，可以通过添加用户名和密码的方式来保护，这样下次登录的时候就必须输入用户名和密码才能访问 web 界面了，*使用加密连接*也一并开启，这样就会使用 HTTPS 方式登录，提供更好的保护。
 
-![webui-pass](../../../assets/image/syncthing-webui-pass.png)
+![webui-pass](../../../assets/image/syncthing-webui-pass.avif)
 
 共享文件夹最好也添加密码保护。
 
-![share-pass](../../../assets/image/syncthing-share-pass.png)
+![share-pass](../../../assets/image/syncthing-share-pass.avif)

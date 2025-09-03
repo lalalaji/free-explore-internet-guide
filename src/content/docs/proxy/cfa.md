@@ -1,9 +1,9 @@
 ---
 title: Clash For Android 使用指南（已删库跑路）
 sidebar:
-    badge:
-        text: 已跑路
-        variant: danger
+  badge:
+    text: 已跑路
+    variant: danger
 ---
 
 :::caution
@@ -28,13 +28,13 @@ Clash For Android 是一个基于 Clash 的开源安卓客户端，让安卓用�
 
 ### 启动代理
 
-打开 Clash For Android，点击主界面的配置按钮，在点击右上角的`+`号，选择 *从 URL 导入*，然后复制粘贴订阅地址，并为新订阅添加一个名字，然后点击右上角的保存按钮。
+打开 Clash For Android，点击主界面的配置按钮，在点击右上角的`+`号，选择 _从 URL 导入_，然后复制粘贴订阅地址，并为新订阅添加一个名字，然后点击右上角的保存按钮。
 
-![新建配置](../../../assets/image/cfa-new-profile.jpg)
+![新建配置](../../../assets/image/cfa-new-profile.avif)
 
 然后在配置界面确保已经选中了刚刚新建的配置，然后返回主界面，点击*已停止 点此启动*按钮，就可以启动 Clash 代理了。
 
-![Clash For Android 主界面](../../../assets/image/cfa-main.jpg)
+![Clash For Android 主界面](../../../assets/image/cfa-main.avif)
 
 如果你的安卓系统支持的话，还可以将已经建立的 Clash VPN 添加到快速设置中，这样下次使用的时候就更加方便快捷了。
 

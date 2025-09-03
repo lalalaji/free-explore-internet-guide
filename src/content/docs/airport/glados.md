@@ -23,27 +23,27 @@ ZI0FM-ZYSS9-6P4NT-47NSN
 
 首先介绍一下 glados 的套餐，分为多个版本，~~套餐调整之后以前的月付 11 元的基础版套餐没了~~。glados 支持在购买前试用，所以你大可以先试用一下再决定要不要购买。
 
-![glados 套餐](../../../assets/image//glados-pricing.png)
+![glados 套餐](../../../assets/image//glados-pricing.avif)
 
 ### 使用
 
 然后按照 glados 的提示下载 Clash For Windows，导入订阅链接即可使用。
 
-![安装 Clash For Windows](../../../assets/image//glados-usage.png)
+![安装 Clash For Windows](../../../assets/image//glados-usage.avif)
 
 安装好 Clash For Windows 后，打开软件，在按照官网的提示点击*添加订阅*按钮（如上图所示），Clash For Windows 应该就会收到请求并自动添加订阅。然后点击左边的 General，选中 System Proxy 开启系统代理；再点击左边的 Proxies，点击上方的 Rule 按钮，将代理规则改为规则模式。这时候就应该可以随心所欲的上网了，你可以打开浏览器访问一下 [谷歌](https://www.google.com)，不出意外的话应该就可以成功访问了。
 
 当然，你这时候应该也发现了，glados 提供的不是单个节点的服务，而是很多个节点，这些节点由 clash 来负责，可以根据延迟和配置文件里预先设定好的规则进行切换。这样我们的上网可用性就会大大提高。当然这也有一个缺点，因为节点会自动切换，所以有时候一些网站会判定成异地登录，触发验证机制。遇到这种情况的话，可以找到 Proxy 节点组，选择一个延迟较低的节点组而不是默认的自动切换 Auto 节点组，这样就不会自动切换了。
 
-![节点组](../../../assets/image//glados-20240222222550.png)
+![节点组](../../../assets/image//glados-20240222222550.avif)
 
 ### 多客户端支持
 
 如果需要其他系统的客户端，glados 也有相关的帮助信息，照着网页上的提示下载对应的客户端就可以了。这也是我选择 glados 的一个原因，客户端的支持比较完善，除了常用的 clash 相关客户端以外，还支持 shadowrocket、surfboard、singbox、wireguard 、netch 游戏加速等多种类型，可以满足各种需求。
 
-![多种客户端](../../../assets/image/glados-20240222223636.png)
+![多种客户端](../../../assets/image/glados-20240222223636.avif)
 
-![更多客户端](../../../assets/image/glados-20240222223704.png)
+![更多客户端](../../../assets/image/glados-20240222223704.avif)
 
 ### 签到
 

@@ -21,7 +21,7 @@ title: Proton VPN
 |      |              | 流媒体解锁            |
 |      |              | 去广告                |
 
-![pricing](../../../assets/image/protonvpn-pricing.webp)
+![pricing](../../../assets/image/protonvpn-pricing.avif)
 
 ## 速度
 

@@ -4,11 +4,11 @@ title: session
 
 [session](https://getsession.org) 是一个新的一个匿名聊天 app，支持安卓、iOS、Windows、Linux 等多种平台。最关键的是，session 目前还没有被墙，可以在墙内正常使用。不过等 session 用的多了，可能就被墙了，所以趁早使用一下吧。
 
-![session](../../../assets/image/session.png)
+![session](../../../assets/image/session.avif)
 
 点击官网的下载按钮即可下载对应的客户端。有谷歌商店的，可以直接在商店中下载，没有的话点击官网对应的链接也可以去 Github 下载。
 
-![路径](../../../assets/image/session-download.png)
+![路径](../../../assets/image/session-download.avif)
 
 安装后打开第一次会为你创建一个 session id，这是你的全局唯一标识符，可以用来添加好友。记得不要随意通过社交账户传递 ID，不然就丧失了匿名性。最起码，你也得在一些非实名制的平台上发布自己的 ID 对不对？
 

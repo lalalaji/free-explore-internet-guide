@@ -20,13 +20,13 @@ Clash Verge Rev 也有 [官方文档](https://clash-verge-rev.github.io/index.ht
 
 使用软件之前需要导入机场的订阅地址。
 
-![导入订阅](../../../assets/image//clash-verge-rev-20240222185253.png)
+![导入订阅](../../../assets/image//clash-verge-rev-20240222185253.avif)
 
 ### 开启代理
 
 然后开启系统代理，应该就可以访问外网了。如果只是使用浏览器科学上网的话，这样就足够了。
 
-![开启系统代理](../../../assets/image//clash-verge-rev-20240222185655.png)
+![开启系统代理](../../../assets/image//clash-verge-rev-20240222185655.avif)
 
 ### TUN 模式全局透明代理
 
@@ -35,23 +35,23 @@ Clash Verge Rev 也有 [官方文档](https://clash-verge-rev.github.io/index.ht
 > [!warning]
 > 如果你正在使用加速器等类似程序，需要提前关闭 Clash 的 TUN 模式，否则可能会产生冲突。
 
-![开启 TUN 模式](../../../assets/image//clash-verge-rev-20240222190617.png)
+![开启 TUN 模式](../../../assets/image//clash-verge-rev-20240222190617.avif)
 
 开启成功之后，在控制面板中应该可以看到名为 Meta 的虚拟网卡。
 
-![虚拟网卡](../../../assets/image//clash-verge-rev-20240222192127.png)
+![虚拟网卡](../../../assets/image//clash-verge-rev-20240222192127.avif)
 
 ### 开机自启
 
 最后一步就是设置软件开机自启，这样就可以在电脑开机之后自动启动 Clash Verge Rev 了。
 
-![开机自启](../../../assets/image//clash-verge-rev-20240222191247.png)
+![开机自启](../../../assets/image//clash-verge-rev-20240222191247.avif)
 
 ### 其他功能
 
 如果想要局域网其他设备也能通过本机访问外网，可以开启局域网连接功能。这样其他设备就可以通过`<本机 IP>:7897`来访问外网了（Clash Verge Rev 默认端口号 7897，也可以自定义修改）。
 
-![其他设置](../../../assets/image//clash-verge-rev-20240222191446.png)
+![其他设置](../../../assets/image//clash-verge-rev-20240222191446.avif)
 
 ## 疑难解答
 
@@ -59,8 +59,8 @@ Clash Verge Rev 也有 [官方文档](https://clash-verge-rev.github.io/index.ht
 
 这是 Windows 系统的一个限制，UWP 无法访问本地回环地址代理。所以当启用了系统代理之后，UWP 应用就无法上网了。Clash Verge Rev 内置了 UWP 工具可以解决这个问题。
 
-![打开 UWP 工具](../../../assets/image//clash-verge-rev-20240222192854.png)
+![打开 UWP 工具](../../../assets/image//clash-verge-rev-20240222192854.avif)
 
-打开 UWP 工具之后，点击 *Exemplify All* 解除所有 UWP 的限制，然后点击 *Save Changes* 保存即可。
+打开 UWP 工具之后，点击 _Exemplify All_ 解除所有 UWP 的限制，然后点击 _Save Changes_ 保存即可。
 
-![Exemplify All](../../../assets/image//cfw-uwp-loopback-acleu.png)
+![Exemplify All](../../../assets/image//cfw-uwp-loopback-acleu.avif)

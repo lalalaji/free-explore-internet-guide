@@ -12,7 +12,7 @@ Warp 是 Cloudflare 推出的一个隐私保护工具，可以将用户的所有
 
 Cloudflare 直接把 <https://1.1.1.1> 这个 IP 地址当作域名来用，有钱，任性！
 
-![warp](../../../assets/image/cloudflare-warp.png)
+![warp](../../../assets/image/cloudflare-warp.avif)
 
 ## 使用
 

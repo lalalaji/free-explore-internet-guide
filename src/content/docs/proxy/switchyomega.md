@@ -1,9 +1,9 @@
 ---
 title: SwitchyOmega 浏览器扩展
 sidebar:
-    badge:
-        text: 即将过期
-        variant: caution
+  badge:
+    text: 即将过期
+    variant: caution
 ---
 
 :::caution
@@ -24,11 +24,11 @@ SwitchyOmega 是一个浏览器代理扩展，可以根据预设或者自定义�
 
 先点击左边情景模式的*新建情景模式*，新建一个代理服务器模式，并按照自己当前所使用的代理配置填写内容。配置完毕后记得保存。
 
-![proxy](../../../assets/image/switchyomega-proxy.png)
+![proxy](../../../assets/image/switchyomega-proxy.avif)
 
-然后再点击*新建情景模式*，新建一个自动切换模式。将默认情景模式设置为*直接连接*，匹配规则列表的设置为*刚刚设置的代理规则*，然后在 *规则列表设置* 那里选择 *AutoProxy* 格式，并填入`https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt`作为预设的规则，再点击*立即更新情景模式*。最后别忘了保存。
+然后再点击*新建情景模式*，新建一个自动切换模式。将默认情景模式设置为*直接连接*，匹配规则列表的设置为*刚刚设置的代理规则*，然后在 _规则列表设置_ 那里选择 _AutoProxy_ 格式，并填入`https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt`作为预设的规则，再点击*立即更新情景模式*。最后别忘了保存。
 
-![auto](../../../assets/image/switchyomega-auto.png)
+![auto](../../../assets/image/switchyomega-auto.avif)
 
 这样一来，SwitchyOmega 扩展的配置就算完成了。这样浏览器在访问一个网站的时候，默认会直接连接，假如遇到手动设定或者预设规则里面的网址时就会切换使用代理访问。假如遇到了不在规则中又无法访问的网站时，只需要手动点击 SwitchyOmega 扩展，然后选择加入代理规则，这样网页就会自动刷新并使用代理访问。
 

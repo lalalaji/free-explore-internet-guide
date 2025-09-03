@@ -10,7 +10,7 @@ title: Google Play 替代
 
 网站地址： <https://www.apkmirror.com>
 
-![Apk Mirror](../../../assets/image/apkmirror.png)
+![Apk Mirror](../../../assets/image/apkmirror.avif)
 
 ## APK Pure
 
@@ -20,10 +20,10 @@ title: Google Play 替代
 
 网站地址： <https://en.aptoide.com>
 
-![Aptoide](../../../assets/image/aptoide.png)
+![Aptoide](../../../assets/image/aptoide.avif)
 
 ## F-Droid
 
 网站地址： <https://f-droid.org>
 
-![F-Droid](../../../assets/image/f-droid.png)
+![F-Droid](../../../assets/image/f-droid.avif)

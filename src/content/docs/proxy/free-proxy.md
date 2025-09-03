@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
 
 这些免费节点我也没有测试过，只是添加到了 clash 软件中看了一下延迟，光是看延迟就感觉这些节点的质量不怎么样。如果实在不想花钱购买机场服务，那就将就着用吧。
 
-![免费节点延迟](../../../assets/image/free-proxy-20240304020532.png)
+![免费节点延迟](../../../assets/image/free-proxy-20240304020532.avif)
 
 ### freenodes
 
