@@ -95,11 +95,11 @@ docker run --name gost-client \
 
 ```json
 {
-  "server": "0.0.0.0",
-  "server_port": 8388,
-  "local_port": 1080,
-  "password": "barfoo!",
-  "method": "chacha20-ietf-poly1305"
+	"server": "0.0.0.0",
+	"server_port": 8388,
+	"local_port": 1080,
+	"password": "barfoo!",
+	"method": "chacha20-ietf-poly1305"
 }
 ```
 
@@ -109,10 +109,10 @@ docker run --name gost-client \
 
 ```json
 {
-  "server": "your_server_ip",
-  "server_port": 8388,
-  "local_port": 1080,
-  "password": "barfoo!",
-  "method": "chacha20-ietf-poly1305"
+	"server": "your_server_ip",
+	"server_port": 8388,
+	"local_port": 1080,
+	"password": "barfoo!",
+	"method": "chacha20-ietf-poly1305"
 }
 ```

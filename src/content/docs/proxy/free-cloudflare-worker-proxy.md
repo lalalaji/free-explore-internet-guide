@@ -17,9 +17,9 @@ title: 免费白嫖 Cloudflare Worker 作为 v2ray 服务端
 脚本中这两行就是我们要修改的地方，分别是 UUID 和代理 IP。
 
 ```js
-let userID = "d342d11e-d424-4583-b36e-524ab1f0afa4";
+let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-let proxyIP = "";
+let proxyIP = '';
 ```
 
 UUID 可以在 windows PowerShell 窗口中使用`New-Guid`命令随机生成，代理 IP 可以直接填写`103.200.112.108`，之后保存。

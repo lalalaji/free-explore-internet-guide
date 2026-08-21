@@ -151,7 +151,7 @@ allow-lan: true
 # '*': bind all IP addresses
 # 192.168.122.11: bind a single IPv4 address
 # "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
-bind-address: "*"
+bind-address: '*'
 
 # 是否启用 ipv6 功能
 # When set to false, resolver won't translate hostnames to IPv6 addresses
@@ -299,12 +299,12 @@ proxies:
   #   aes-128-ctr aes-192-ctr aes-256-ctr
   #   rc4-md5 chacha20-ietf xchacha20
   #   chacha20-ietf-poly1305 xchacha20-ietf-poly1305
-  - name: "ss1"
+  - name: 'ss1'
     type: ss
     server: server
     port: 443
     cipher: chacha20-ietf-poly1305
-    password: "password"
+    password: 'password'
     # udp: true
 ```
 
@@ -323,7 +323,7 @@ relay 会将流量按顺序链式转发，注意 relay 的转发链中不能包�
 proxy-groups:
   # relay chains the proxies. proxies shall not contain a relay. No UDP support.
   # Traffic: clash <-> http <-> vmess <-> ss1 <-> ss2 <-> Internet
-  - name: "relay"
+  - name: 'relay'
     type: relay
     proxies:
       - http
@@ -340,7 +340,7 @@ url-test 会用给定的 URL 测试，并自动选择最佳的代理节点。
   <summary>url-test</summary>
 
 ```yaml
-- name: "auto"
+- name: 'auto'
   type: url-test
   proxies:
     - ss1
@@ -348,7 +348,7 @@ url-test 会用给定的 URL 测试，并自动选择最佳的代理节点。
     - vmess1
   # tolerance: 150
   # lazy: true
-  url: "http://www.gstatic.com/generate_204"
+  url: 'http://www.gstatic.com/generate_204'
   interval: 300
 ```
 
@@ -360,13 +360,13 @@ fallback 和 url-test 机制类似，使用 URL 来测试节点，但是会尽�
   <summary>fallback</summary>
 
 ```yaml
-- name: "fallback-auto"
+- name: 'fallback-auto'
   type: fallback
   proxies:
     - ss1
     - ss2
     - vmess1
-  url: "http://www.gstatic.com/generate_204"
+  url: 'http://www.gstatic.com/generate_204'
   interval: 300
 ```
 
@@ -419,19 +419,19 @@ proxy-providers:
 
 ```yaml
 proxies:
-  - name: "ss1"
+  - name: 'ss1'
     type: ss
     server: server
     port: 443
     cipher: chacha20-ietf-poly1305
-    password: "password"
+    password: 'password'
 
-  - name: "ss2"
+  - name: 'ss2'
     type: ss
     server: server
     port: 443
     cipher: chacha20-ietf-poly1305
-    password: "password"
+    password: 'password'
     plugin: obfs
     plugin-opts:
       mode: tls
@@ -614,13 +614,13 @@ type resolve_process_path = () => string; // find process path (/usr/bin/curl .e
 ```yaml
 rule-providers:
   apple:
-    behavior: "domain"
+    behavior: 'domain'
     type: http
-    url: "url"
+    url: 'url'
     interval: 3600
     path: ./apple.yaml
   microsoft:
-    behavior: "domain"
+    behavior: 'domain'
     type: file
     path: /microsoft.yaml
 ```
@@ -631,17 +631,17 @@ Rule Provider 有三种类型。`domain`只能定义域名。
 
 ```yaml
 payload:
-  - ".blogger.com"
-  - "*.*.microsoft.com"
-  - "books.itunes.apple.com"
+  - '.blogger.com'
+  - '*.*.microsoft.com'
+  - 'books.itunes.apple.com'
 ```
 
 `ipcr`只能定义 IP 段。
 
 ```yaml
 payload:
-  - "192.168.1.0/24"
-  - "10.0.0.0.1/32"
+  - '192.168.1.0/24'
+  - '10.0.0.0.1/32'
 ```
 
 `classical`可以定义各种类型的规则。
