@@ -1,4 +1,14 @@
 {
+	"$schema": "https://biomejs.dev/schemas/2.5.10/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single",
@@ -6,13 +16,17 @@
 		}
 	},
 	"linter": {
+		"enabled": true,
 		"rules": {
-			"recommended": true
+			"preset": "recommended"
 		}
 	},
-	"vcs": {
-		"clientKind": "git",
+	"assist": {
 		"enabled": true,
-		"useIgnoreFile": true
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
 	}
 }

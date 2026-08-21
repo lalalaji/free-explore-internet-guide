@@ -36,19 +36,19 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: '代理',
-					autogenerate: { directory: 'proxy' },
+					items: [{ autogenerate: { directory: 'proxy' } }],
 				},
 				{
 					label: '机场',
-					autogenerate: { directory: 'airport' },
+					items: [{ autogenerate: { directory: 'airport' } }],
 				},
 				{
 					label: '网络',
-					autogenerate: { directory: 'network' },
+					items: [{ autogenerate: { directory: 'network' } }],
 				},
 				{
 					label: '隐私',
-					autogenerate: { directory: 'privacy' },
+					items: [{ autogenerate: { directory: 'privacy' } }],
 				},
 				{
 					label: '关于',

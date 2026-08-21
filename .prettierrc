@@ -1,0 +1,14 @@
+{
+	"proseWrap": "preserve",
+	"singleQuote": true,
+	"tabWidth": 2,
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": ["*.mdx"],
+			"options": {
+				"useTabs": false
+			}
+		}
+	]
+}
