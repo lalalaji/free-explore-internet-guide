@@ -1,5 +1,6 @@
 import starlight from '@astrojs/starlight';
 import { defineConfig } from 'astro/config';
+import starlightGitHubAlerts from 'starlight-github-alerts';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,6 +9,7 @@ export default defineConfig({
 		starlight({
 			title: '🪜无障碍网上冲浪指南🪜',
 			favicon: './src/assets/favicon.ico',
+			plugins: [starlightGitHubAlerts()],
 			social: [
 				{
 					icon: 'github',

@@ -22,6 +22,7 @@
 		"@biomejs/biome": "^2.5.10",
 		"astro": "^7.2.4",
 		"sharp": "^0.35.3",
+		"starlight-github-alerts": "^0.4.0",
 		"typescript": "^5.9.3"
 	},
 	"devDependencies": {
