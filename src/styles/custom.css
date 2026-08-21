@@ -1,0 +1,292 @@
+/* ==========================================================================
+   Starlight Custom Theme - Cyber Cyan & Modern Ocean
+   ========================================================================== */
+
+:root {
+	/* 强调色调系统 */
+	--sl-color-accent-low: #082f49;
+	--sl-color-accent: #0284c7;
+	--sl-color-accent-high: #38bdf8;
+
+	/* 现代中文字体体系 */
+	--sl-font:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+		"Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+	--sl-font-mono:
+		"JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco,
+		Consolas, monospace;
+}
+
+:root[data-theme="dark"] {
+	--sl-color-accent-low: #0c4a6e;
+	--sl-color-accent: #0ea5e9;
+	--sl-color-accent-high: #7dd3fc;
+	--sl-color-bg: #0b0f17;
+	--sl-color-bg-nav: rgba(11, 15, 23, 0.85);
+}
+
+:root[data-theme="light"] {
+	--sl-color-accent-low: #e0f2fe;
+	--sl-color-accent: #0284c7;
+	--sl-color-accent-high: #0369a1;
+}
+
+/* ==========================================================================
+   Hero 区域背景与标题渐变特效
+   ========================================================================== */
+
+.hero {
+	position: relative;
+	overflow: hidden;
+}
+
+:root[data-theme="dark"] .hero {
+	background: radial-gradient(
+		circle at 50% 10%,
+		rgba(14, 165, 233, 0.15) 0%,
+		rgba(56, 189, 248, 0.05) 35%,
+		transparent 70%
+	);
+}
+
+:root[data-theme="light"] .hero {
+	background: radial-gradient(
+		circle at 50% 10%,
+		rgba(14, 165, 233, 0.1) 0%,
+		rgba(56, 189, 248, 0.03) 40%,
+		transparent 70%
+	);
+}
+
+/* Hero 标题渐变字效 */
+.hero h1 {
+	background: linear-gradient(
+		135deg,
+		var(--sl-color-white) 40%,
+		var(--sl-color-accent-high) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	filter: drop-shadow(0 2px 12px rgba(14, 165, 233, 0.2));
+}
+
+:root[data-theme="light"] .hero h1 {
+	background: linear-gradient(135deg, #0f172a 40%, #0284c7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Hero 副标题优化 */
+.hero .tagline {
+	max-width: 42rem;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.7;
+	opacity: 0.9;
+}
+
+.hero .actions {
+	margin-top: 1.5rem;
+	justify-content: center;
+	gap: 1rem;
+}
+
+/* ==========================================================================
+   卡片组件 (Card & CardGrid) 质感与光晕效果 (不改变错位排版与位置)
+   ========================================================================== */
+
+:root .card {
+	border-radius: 14px;
+	padding: 1.5rem;
+	border: 1px solid var(--sl-color-gray-5);
+	background: var(--sl-color-gray-6);
+	position: relative;
+	backdrop-filter: blur(10px);
+	transition:
+		box-shadow 0.25s ease,
+		border-color 0.25s ease,
+		background-color 0.25s ease;
+	will-change: box-shadow, border-color;
+}
+
+:root[data-theme="dark"] .card {
+	background: linear-gradient(
+		145deg,
+		rgba(14, 165, 233, 0.08) 0%,
+		rgba(15, 23, 42, 0.75) 45%,
+		rgba(11, 15, 23, 0.9) 100%
+	);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+:root[data-theme="dark"] .card:hover {
+	background: linear-gradient(
+		145deg,
+		rgba(14, 165, 233, 0.14) 0%,
+		rgba(15, 23, 42, 0.8) 50%,
+		rgba(11, 15, 23, 0.92) 100%
+	);
+	border-color: rgba(56, 189, 248, 0.6);
+	box-shadow:
+		0 0 0 1px rgba(56, 189, 248, 0.3),
+		0 8px 24px -4px rgba(14, 165, 233, 0.35);
+}
+
+:root[data-theme="light"] .card {
+	background: linear-gradient(145deg, #ffffff 0%, #f0f9ff 100%);
+	border: 1px solid rgba(2, 132, 199, 0.12);
+}
+
+:root[data-theme="light"] .card:hover {
+	background: linear-gradient(145deg, #ffffff 0%, #e0f2fe 100%);
+	border-color: var(--sl-color-accent);
+	box-shadow:
+		0 0 0 1px rgba(2, 132, 199, 0.2),
+		0 6px 20px -4px rgba(2, 132, 199, 0.25);
+}
+
+/* 卡片标题与图标高亮与弹跳动效 */
+:root .card .title {
+	font-weight: 600;
+	color: var(--sl-color-white);
+}
+
+:root .card svg {
+	color: var(--sl-color-accent-high);
+	filter: drop-shadow(0 0 6px rgba(14, 165, 233, 0.3));
+	transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+:root .card:hover svg {
+	transform: scale(1.2) rotate(-5deg);
+}
+
+/* 卡片内链接列表精致化 */
+.card ul {
+	margin-top: 0.75rem;
+	padding-left: 1.25rem;
+}
+
+.card li {
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+	line-height: 1.6;
+}
+
+.card li a {
+	color: var(--sl-color-gray-2);
+	text-decoration: none;
+	transition:
+		color 0.2s ease,
+		transform 0.2s ease;
+	display: inline-block;
+}
+
+.card li a:hover {
+	color: var(--sl-color-accent-high);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+/* ==========================================================================
+   顶部导航栏 (Header) 浅蓝微光与精致排版
+   ========================================================================== */
+
+/* 顶部导航栏底色渐变与毛玻璃微透效果 */
+header.header {
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	transition:
+		background 0.3s ease,
+		border-color 0.3s ease;
+}
+
+:root[data-theme="dark"] header.header {
+	background: linear-gradient(
+		90deg,
+		rgba(11, 15, 23, 0.92) 0%,
+		rgba(14, 165, 233, 0.12) 40%,
+		rgba(11, 15, 23, 0.92) 100%
+	);
+	border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+	box-shadow: 0 4px 20px -6px rgba(14, 165, 233, 0.2);
+}
+
+:root[data-theme="light"] header.header {
+	background: linear-gradient(
+		90deg,
+		#ffffff 0%,
+		#f0f9ff 35%,
+		#e0f2fe 75%,
+		#ffffff 100%
+	);
+	border-bottom: 1px solid rgba(2, 132, 199, 0.15);
+	box-shadow: 0 4px 16px -4px rgba(2, 132, 199, 0.08);
+}
+
+/* 顶部站点标题与 Emoji 微光 */
+header .site-title {
+	font-weight: 700;
+	transition:
+		filter 0.25s ease,
+		opacity 0.25s ease;
+}
+
+header .site-title:hover {
+	filter: drop-shadow(0 0 8px rgba(14, 165, 233, 0.4));
+}
+
+/* 搜索框 (Search Bar) 胶囊圆角与微透质感 */
+site-search button[data-open-modal] {
+	border-radius: 9999px;
+	transition: all 0.2s ease;
+}
+
+:root[data-theme="dark"] site-search button[data-open-modal] {
+	border: 1px solid rgba(56, 189, 248, 0.25);
+	background: rgba(14, 165, 233, 0.08);
+}
+
+:root[data-theme="light"] site-search button[data-open-modal] {
+	border: 1px solid rgba(2, 132, 199, 0.2);
+	background: rgba(255, 255, 255, 0.8);
+}
+
+site-search button[data-open-modal]:hover {
+	border-color: var(--sl-color-accent-high);
+	box-shadow: 0 0 12px rgba(14, 165, 233, 0.25);
+}
+
+/* 社交图标与主题选择按钮 */
+header .social-icons a,
+header starlight-theme-select label {
+	transition:
+		color 0.2s ease,
+		filter 0.2s ease;
+}
+
+header .social-icons a:hover {
+	filter: drop-shadow(0 0 6px rgba(14, 165, 233, 0.5));
+}
+
+/* ==========================================================================
+   全局细节优化
+   ========================================================================== */
+
+/* 正文代码块与行内代码圆角与对比度 */
+:not(pre) > code {
+	border-radius: 6px;
+	padding: 0.15em 0.4em;
+	background-color: var(--sl-color-accent-low);
+	color: var(--sl-color-accent-high);
+	font-size: 0.875em;
+}
+
+/* 平滑滚动 */
+html {
+	scroll-behavior: smooth;
+}

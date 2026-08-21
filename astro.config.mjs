@@ -9,6 +9,7 @@ export default defineConfig({
 		starlight({
 			title: '🪜无障碍网上冲浪指南🪜',
 			favicon: './src/assets/favicon.ico',
+			customCss: ['./src/styles/custom.css'],
 			plugins: [starlightGitHubAlerts()],
 			social: [
 				{
