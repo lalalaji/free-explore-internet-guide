@@ -74,6 +74,7 @@ https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub.yaml
 **替换方式**：直接在 Raw 链接前加上镜像前缀。
 
 **替换示例**：
+
 - AutoMergePublicNodes 镜像链接：
   ```txt
   https://ghproxy.net/https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml
@@ -92,6 +93,7 @@ https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub.yaml
 针对 GitHub 公开仓库的文件，可以通过 jsDelivr 全球 CDN 进行缓存加速拉取。
 
 常用的 jsDelivr 节点：
+
 - `https://cdn.jsdelivr.net/`
 - `https://fastly.jsdelivr.net/`
 
@@ -101,6 +103,7 @@ https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub.yaml
 `https://fastly.jsdelivr.net/gh/<用户名>/<仓库名>@<分支>/<文件路径>`
 
 **替换示例**：
+
 - AutoMergePublicNodes CDN 链接：
   ```txt
   https://fastly.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.meta.yml

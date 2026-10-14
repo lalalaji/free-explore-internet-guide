@@ -11,5 +11,6 @@ title: 关于
 ## 小事记
 
 - 2022/11/7，更换了新域名，把网站的内容重构了一下；添加了搜索引擎的支持，以后就可以在谷歌和必应中见到我啦
-- 2024/2/19，网站因为 freenom 免费域名的原因挂了好几天，现在域名已经恢复了，并且增加了 [备用域名](https://lalalaji.xyz)
+- 2024/2/19，网站因为 freenom 免费域名的原因挂了好几天，域名恢复后增加了 [备用域名](https://lalalaji.xyz)
 - 2024/3/3，使用 [astro/starlight 主题](https://starlight.astro.build/zh-cn/) 重新整理了网站，现在的网站看起来更舒服了
+- 2026/10/14，由于 Freenom 免费域名全面失效不可用，正式弃用 lalalaji.tk 域名，今后仅保留并长期维护主域名 [lalalaji.xyz](https://lalalaji.xyz)
